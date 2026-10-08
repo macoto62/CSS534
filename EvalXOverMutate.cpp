@@ -58,6 +58,7 @@ float distance(int x1, int y1, int x2, int y2) {
 
 
 void evaluate(Trip trip[CHROMOSOMES], int coordinates[CITIES][2]) {
+    #pragma omp parallel for
     for (int i = 0; i < CHROMOSOMES; i++) {
         float totalDistance = 0.0f;
 
@@ -98,6 +99,7 @@ void evaluate(Trip trip[CHROMOSOMES], int coordinates[CITIES][2]) {
 
 
 void crossover( Trip parents[TOP_X], Trip offsprings[TOP_X], int coordinates[CITIES][2] ) {
+    #pragma omp parallel for
     for (int i = 0; i < TOP_X; i += 2) {
         vector<bool> used(CITIES, false);
         char firstCity = parents[i].itinerary[0];
@@ -164,7 +166,7 @@ void mutate( Trip offsprings[TOP_X] ) {
         srand(static_cast<unsigned>(time(0)));
         seeded = true;
     }
-
+    #pragma omp parallel for
     for (int i = 0; i < TOP_X; i++) {
         if (rand() % 100 >= MUTATE_RATE) {
             continue;
