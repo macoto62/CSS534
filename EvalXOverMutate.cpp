@@ -30,7 +30,7 @@ int findCityIndex(Trip trip, char city) {
     return -1;
 }
 
-char followingCity(Trip trip, char city) {
+char followingCity(const Trip &trip, char city) {
     int index = findCityIndex(trip, city);
     return trip.itinerary[(index + 1) % CITIES];
 }
