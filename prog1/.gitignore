@@ -1,0 +1,15 @@
+# Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+Tsp
+initialize
+
+# Common build outputs
+*.out
+*.a
+*.so
+build/
+bin/
