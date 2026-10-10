@@ -15,6 +15,7 @@ void select( Trip trip[CHROMOSOMES], Trip parents[TOP_X] );
 void populate( Trip trip[CHROMOSOMES], Trip offsprings[TOP_X] );
 
 // need to implement for your program 1
+extern void calculateDistanceMatrix(int coordinates[CITIES][2]);
 extern void evaluate( Trip trip[CHROMOSOMES], int coordinates[CITIES][2] );
 extern void crossover( Trip parents[TOP_X], Trip offsprings[TOP_X], int coordinates[CITIES][2] );
 extern void mutate( Trip offsprings[TOP_X] );
@@ -44,7 +45,7 @@ int main( int argc, char* argv[] ) {
 
   // initialize 5000 trips and 36 cities' coordinates
   initialize( trip, coordinates );
-
+  calculateDistanceMatrix(coordinates);
   // start a timer 
   Timer timer;
   timer.start( );
