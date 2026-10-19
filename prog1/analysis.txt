@@ -1,0 +1,1111 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 19.36      3.90     3.90 135000000     0.00     0.00  findCityIndex(Trip const&, char)
+ 10.59      6.04     2.13 267679680     0.00     0.00  std::operator+(std::_Bit_iterator const&, long)
+  9.79      8.02     1.98 265804680     0.00     0.00  std::vector<bool, std::allocator<bool> >::begin()
+  7.88      9.61     1.59                             _init
+  6.79     10.97     1.37                             _GLOBAL__sub_I_distanceMatrix
+  5.21     12.03     1.05 135000000     0.00     0.00  followingCity(Trip const&, char)
+  4.31     12.89     0.87 651819220     0.00     0.00  cityIndex(char)
+  3.32     13.56     0.67 267679680     0.00     0.00  std::_Bit_iterator_base::_M_incr(long)
+  2.97     14.16     0.60 265804680     0.00     0.00  std::vector<bool, std::allocator<bool> >::operator[](unsigned long)
+  2.90     14.75     0.58 265804680     0.00     0.00  std::_Bit_iterator::operator*() const
+  2.70     15.29     0.55 267679680     0.00     0.00  std::_Bit_iterator::_Bit_iterator(unsigned long*, unsigned int)
+  2.55     15.81     0.52 265804680     0.00     0.00  std::_Bit_iterator::operator[](long) const
+  2.26     16.27     0.46 267679680     0.00     0.00  std::_Bit_iterator::operator+=(long)
+  2.26     16.72     0.46 265804680     0.00     0.00  std::_Bit_reference::_Bit_reference(unsigned long*, unsigned long)
+  2.06     17.14     0.41 198304680     0.00     0.00  std::_Bit_reference::operator bool() const
+  1.59     17.45     0.32 275179680     0.00     0.00  std::_Bit_iterator_base::_Bit_iterator_base(unsigned long*, unsigned int)
+  1.14     17.68     0.23 67500000     0.00     0.00  std::_Bit_reference::operator=(bool)
+  0.82     17.85     0.17 108425268     0.00     0.00  bool __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip*, Trip*>(Trip*, Trip*)
+  0.69     17.99     0.14 123408082     0.00     0.00  evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}::operator()(Trip const&, Trip const&) const
+  0.67     18.12     0.14  7500000     0.00     0.00  std::_Bit_iterator::_Bit_iterator()
+  0.64     18.25     0.13 113436750     0.00     0.00  std::remove_reference<Trip&>::type&& std::move<Trip&>(Trip&)
+  0.59     18.38     0.12 30309039     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Trip> >, std::is_move_constructible<Trip>, std::is_move_assignable<Trip> >::value, void>::type std::swap<Trip>(Trip&, Trip&)
+  0.59     18.50     0.12    15088     0.01     0.01  std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand()
+  0.47     18.59     0.10  1862630     0.00     0.00  std::allocator<int>::allocator()
+  0.42     18.68     0.09 38553294     0.00     0.00  int* std::__niter_base<int*>(int*)
+  0.40     18.75     0.08 65625000     0.00     0.00  indexToCity(int)
+  0.40     18.84     0.08 12851098     0.00     0.00  unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  0.30     18.89     0.06 27564826     0.00     0.00  std::vector<int, std::allocator<int> >::size() const
+  0.25     18.95     0.05 18829212     0.00     0.00  std::uniform_int_distribution<int>::param_type::a() const
+  0.25     19.00     0.05 12851098     0.00     0.00  __gnu_cxx::new_allocator<int>::max_size() const
+  0.25     19.05     0.05  7499668     0.00     0.00  void std::__unguarded_linear_insert<Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  0.22     19.09     0.04  9414606     0.00     0.00  int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&)
+  0.20     19.13     0.04 12851098     0.00     0.00  std::enable_if<std::__is_bitwise_relocatable<int, void>::value, int*>::type std::__relocate_a_1<int, int>(int*, int*, int*, std::allocator<int>&)
+  0.20     19.17     0.04 12738855     0.00     0.00  operator new(unsigned long, void*)
+  0.20     19.21     0.04  8288179     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+  0.20     19.25     0.04  6425549     0.00     0.00  void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+  0.17     19.29     0.04 14978216     0.00     0.00  bool __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip, Trip*>(Trip&, Trip*)
+  0.17     19.32     0.04  1875000     0.00     0.00  std::_Bvector_base<std::allocator<bool> >::_Bvector_impl_data::_M_reset()
+  0.17     19.36     0.04                             _GLOBAL__sub_I__ZN5TimerC2Ev
+  0.15     19.39     0.03 12738855     0.00     0.00  void __gnu_cxx::new_allocator<int>::construct<int, int const&>(int*, int const&)
+  0.15     19.41     0.03  9414606     0.00     0.00  std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator()()
+  0.15     19.45     0.03  1875000     0.00     0.00  std::_Bvector_base<std::allocator<bool> >::_M_allocate(unsigned long)
+  0.15     19.48     0.03  1875000     0.00     0.00  std::vector<bool, std::allocator<bool> >::~vector()
+  0.15     19.50     0.03   673121     0.00     0.00  Trip* std::__unguarded_partition<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  0.12     19.53     0.03 12851098     0.00     0.00  std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&)
+  0.10     19.55     0.02 25702196     0.00     0.00  __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const
+  0.10     19.57     0.02 12851098     0.00     0.00  __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&)
+  0.10     19.59     0.02 12851098     0.00     0.00  std::vector<int, std::allocator<int> >::_S_relocate(int*, int*, int*, std::allocator<int>&)
+  0.10     19.61     0.02 12851098     0.00     0.00  int* std::__relocate_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&)
+  0.10     19.63     0.02 12738855     0.00     0.00  void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std::allocator<int>&, int*, int const&)
+  0.10     19.65     0.02 12738855     0.00     0.00  std::vector<int, std::allocator<int> >::push_back(int const&)
+  0.10     19.67     0.02  6425549     0.00     0.00  __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*)
+  0.10     19.69     0.02  6425549     0.00     0.00  std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const
+  0.10     19.71     0.02  6425549     0.00     0.00  std::vector<int, std::allocator<int> >::begin()
+  0.10     19.73     0.02  3750000     0.00     0.00  std::_Bvector_base<std::allocator<bool> >::_S_nword(unsigned long)
+  0.10     19.75     0.02  1875000     0.00     0.00  __gnu_cxx::new_allocator<unsigned long>::new_allocator(__gnu_cxx::new_allocator<unsigned long> const&)
+  0.10     19.77     0.02  1875000     0.00     0.00  std::allocator<unsigned long>::allocator(std::allocator<unsigned long> const&)
+  0.10     19.79     0.02  1875000     0.00     0.00  std::_Bvector_base<std::allocator<bool> >::_M_deallocate()
+  0.10     19.81     0.02  1862630     0.00     0.00  std::vector<int, std::allocator<int> >::operator[](unsigned long)
+  0.10     19.83     0.02      150     0.13     0.13  select(Trip*, Trip*)
+  0.07     19.84     0.01  9414606     0.00     0.00  unsigned int std::uniform_int_distribution<int>::_S_nd<unsigned long, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>, unsigned int>(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, unsigned int)
+  0.07     19.86     0.01  7486913     0.00     0.00  std::uniform_int_distribution<int>::uniform_int_distribution(int, int)
+  0.07     19.88     0.01  3750000     0.00     0.00  __gnu_cxx::new_allocator<unsigned long>::~new_allocator()
+  0.07     19.89     0.01  3750000     0.00     0.00  std::_Bvector_base<std::allocator<bool> >::_Bvector_impl_data::_Bvector_impl_data()
+  0.07     19.91     0.01  1862630     0.00     0.00  std::vector<int, std::allocator<int> >::~vector()
+  0.05     19.91     0.01 31903259     0.00     0.00  int const& std::forward<int const&>(std::remove_reference<int const&>::type&)
+  0.05     19.93     0.01 14713728     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+  0.05     19.93     0.01 12851098     0.00     0.00  std::vector<int, std::allocator<int> >::max_size() const
+  0.05     19.95     0.01 12851098     0.00     0.00  std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&)
+  0.05     19.95     0.01  7499668     0.00     0.00  __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> __gnu_cxx::__ops::__val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(__gnu_cxx::__ops::_Iter_comp_iter<__gnu_cxx::__ops::_Val_comp_iter>)
+  0.05     19.96     0.01  7486913     0.00     0.00  std::uniform_int_distribution<int>::param_type::param_type(int, int)
+  0.05     19.98     0.01  6425549     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long)
+  0.05     19.98     0.01  6425549     0.00     0.00  std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long)
+  0.05     20.00     0.01  6425549     0.00     0.00  std::vector<int, std::allocator<int> >::end()
+  0.05     20.00     0.01  6425549     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.05     20.02     0.01  1875000     0.00     0.00  __gnu_cxx::new_allocator<bool>::~new_allocator()
+  0.05     20.02     0.01  1875000     0.00     0.00  __gnu_cxx::new_allocator<unsigned long>::allocate(unsigned long, void const*)
+  0.05     20.04     0.01  1875000     0.00     0.00  std::allocator<bool>::~allocator()
+  0.05     20.05     0.01  1875000     0.00     0.00  std::vector<bool, std::allocator<bool> >::vector(unsigned long, bool const&, std::allocator<bool> const&)
+  0.05     20.05     0.01  1862630     0.00     0.00  std::allocator<int>::~allocator()
+  0.05     20.07     0.01   673121     0.00     0.00  Trip* std::__unguarded_partition_pivot<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  0.05     20.07     0.01     1332     0.01     0.01  distance(int, int, int, int)
+  0.05     20.09     0.01      150     0.07     0.07  populate(Trip*, Trip*)
+  0.05     20.09     0.01      150     0.07     3.88  void std::__introsort_loop<Trip*, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  0.05     20.11     0.01      150     0.07     0.07  std::__lg(long)
+  0.05     20.11     0.01       51     0.20     0.26  void std::__sort_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&)
+  0.02     20.12     0.01 19276647     0.00     0.00  __gnu_cxx::new_allocator<int>::_M_max_size() const
+  0.02     20.12     0.01 12851098     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const
+  0.02     20.13     0.01  9414606     0.00     0.00  std::uniform_int_distribution<int>::param_type::b() const
+  0.02     20.14     0.01  3750000     0.00     0.00  std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::_M_end_addr() const
+  0.02     20.14     0.01  1875000     0.00     0.00  __gnu_cxx::new_allocator<unsigned long>::new_allocator()
+  0.02     20.14     0.01  1875000     0.00     0.00  std::allocator_traits<std::allocator<unsigned long> >::deallocate(std::allocator<unsigned long>&, unsigned long*, unsigned long)
+  0.02     20.15     0.01  1862630     0.00     0.00  __gnu_cxx::new_allocator<int>::new_allocator()
+  0.02     20.16     0.01  1862630     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  0.02     20.16     0.01   673121     0.00     0.00  void std::__move_median_to_first<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  0.02     20.16     0.01     3737     0.00     0.00  void std::__adjust_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  0.02     20.17     0.01      623     0.01     0.01  std::__detail::_Mod<unsigned long, 624ul, 1ul, 0ul, true, true>::__calc(unsigned long)
+  0.00     20.17     0.00 30309039     0.00     0.00  void std::iter_swap<Trip*, Trip*>(Trip*, Trip*)
+  0.00     20.17     0.00 12851098     0.00     0.00  std::vector<int, std::allocator<int> >::_S_do_relocate(int*, int*, int*, std::allocator<int>&, std::integral_constant<bool, true>)
+  0.00     20.17     0.00  9414606     0.00     0.00  int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, std::uniform_int_distribution<int>::param_type const&)
+  0.00     20.17     0.00  7503705     0.00     0.00  std::remove_reference<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>::type&& std::move<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>(std::remove_reference&&)
+  0.00     20.17     0.00  7503405     0.00     0.00  std::remove_reference<__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&>::type&& std::move<__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&>(std::remove_reference&&)
+  0.00     20.17     0.00  7499668     0.00     0.00  __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Val_comp_iter(__gnu_cxx::__ops::_Iter_comp_iter<{lambda(Trip const&, Trip const&)#1}>&&)
+  0.00     20.17     0.00  6425549     0.00     0.00  __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long)
+  0.00     20.17     0.00  6425549     0.00     0.00  __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::difference_type __gnu_cxx::operator-<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&)
+  0.00     20.17     0.00  6425549     0.00     0.00  std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long)
+  0.00     20.17     0.00  5625000     0.00     0.00  crossoverRng()
+  0.00     20.17     0.00  5625000     0.00     0.00  unsigned long* std::__addressof<unsigned long>(unsigned long&)
+  0.00     20.17     0.00  3750000     0.00     0.00  std::allocator<unsigned long>::~allocator()
+  0.00     20.17     0.00  1875000     0.00     0.00  __gnu_cxx::new_allocator<bool>::new_allocator()
+  0.00     20.17     0.00  1875000     0.00     0.00  __gnu_cxx::new_allocator<unsigned long>::deallocate(unsigned long*, unsigned long)
+  0.00     20.17     0.00  1875000     0.00     0.00  __gnu_cxx::new_allocator<unsigned long>::_M_max_size() const
+  0.00     20.17     0.00  1875000     0.00     0.00  std::allocator<bool>::allocator()
+  0.00     20.17     0.00  1875000     0.00     0.00  std::allocator<unsigned long>::allocator<bool>(std::allocator<bool> const&)
+  0.00     20.17     0.00  1875000     0.00     0.00  std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::_Bvector_impl(std::allocator<unsigned long> const&)
+  0.00     20.17     0.00  1875000     0.00     0.00  std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::~_Bvector_impl()
+  0.00     20.17     0.00  1875000     0.00     0.00  std::_Bvector_base<std::allocator<bool> >::_Bvector_base(std::allocator<bool> const&)
+  0.00     20.17     0.00  1875000     0.00     0.00  std::_Bvector_base<std::allocator<bool> >::~_Bvector_base()
+  0.00     20.17     0.00  1875000     0.00     0.00  std::allocator_traits<std::allocator<unsigned long> >::allocate(std::allocator<unsigned long>&, unsigned long)
+  0.00     20.17     0.00  1875000     0.00     0.00  std::vector<bool, std::allocator<bool> >::_M_initialize(unsigned long)
+  0.00     20.17     0.00  1875000     0.00     0.00  std::vector<bool, std::allocator<bool> >::_M_initialize_value(bool)
+  0.00     20.17     0.00  1862630     0.00     0.00  __gnu_cxx::new_allocator<int>::~new_allocator()
+  0.00     20.17     0.00  1862630     0.00     0.00  void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+  0.00     20.17     0.00  1862630     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl()
+  0.00     20.17     0.00  1862630     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+  0.00     20.17     0.00  1862630     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data()
+  0.00     20.17     0.00  1862630     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_base()
+  0.00     20.17     0.00  1862630     0.00     0.00  std::vector<int, std::allocator<int> >::vector()
+  0.00     20.17     0.00  1862630     0.00     0.00  void std::_Destroy<int*>(int*, int*)
+  0.00     20.17     0.00  1862630     0.00     0.00  void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  0.00     20.17     0.00    50000     0.00     0.00  std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&, char*)
+  0.00     20.17     0.00     4598     0.00     0.00  bool __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip*, Trip>(Trip*, Trip&)
+  0.00     20.17     0.00     3737     0.00     0.00  __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Iter_comp_val(__gnu_cxx::__ops::_Iter_comp_iter<{lambda(Trip const&, Trip const&)#1}>&&)
+  0.00     20.17     0.00     3737     0.00     0.00  void std::__push_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&)
+  0.00     20.17     0.00     2482     0.00     0.00  void std::__pop_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&)
+  0.00     20.17     0.00      624     0.00     0.00  std::__detail::_Mod<unsigned long, 4294967296ul, 1ul, 0ul, true, true>::__calc(unsigned long)
+  0.00     20.17     0.00      624     0.00     0.00  unsigned long std::__detail::__mod<unsigned long, 4294967296ul, 1ul, 0ul>(unsigned long)
+  0.00     20.17     0.00      623     0.00     0.01  unsigned long std::__detail::__mod<unsigned long, 624ul, 1ul, 0ul>(unsigned long)
+  0.00     20.17     0.00      546     0.00     0.00  Trip* std::__niter_base<Trip*>(Trip*)
+  0.00     20.17     0.00      364     0.00     0.00  Trip* std::__miter_base<Trip*>(Trip*)
+  0.00     20.17     0.00      182     0.00     0.00  Trip* std::__copy_move_backward<true, true, std::random_access_iterator_tag>::__copy_move_b<Trip>(Trip const*, Trip const*, Trip*)
+  0.00     20.17     0.00      182     0.00     0.00  Trip* std::__niter_wrap<Trip*>(Trip* const&, Trip*)
+  0.00     20.17     0.00      182     0.00     0.00  Trip* std::move_backward<Trip*, Trip*>(Trip*, Trip*, Trip*)
+  0.00     20.17     0.00      182     0.00     0.00  Trip* std::__copy_move_backward_a<true, Trip*, Trip*>(Trip*, Trip*, Trip*)
+  0.00     20.17     0.00      182     0.00     0.00  Trip* std::__copy_move_backward_a1<true, Trip*, Trip*>(Trip*, Trip*, Trip*)
+  0.00     20.17     0.00      182     0.00     0.00  Trip* std::__copy_move_backward_a2<true, Trip*, Trip*>(Trip*, Trip*, Trip*)
+  0.00     20.17     0.00      150     0.00     0.00  mutate(Trip*)
+  0.00     20.17     0.00      150     0.00     4.87  evaluate(Trip*, int (*) [2])
+  0.00     20.17     0.00      150     0.00     0.00  crossover(Trip*, Trip*, int (*) [2])
+  0.00     20.17     0.00      150     0.00     0.00  __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Iter_comp_iter({lambda(Trip const&, Trip const&)#1})
+  0.00     20.17     0.00      150     0.00     0.00  __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> __gnu_cxx::__ops::__iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(__gnu_cxx::__ops::_Iter_comp_iter)
+  0.00     20.17     0.00      150     0.00     0.00  void std::__insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  0.00     20.17     0.00      150     0.00     0.92  void std::__final_insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  0.00     20.17     0.00      150     0.00     0.92  void std::__unguarded_insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  0.00     20.17     0.00      150     0.00     4.87  void std::sort<Trip*, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(Trip*, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1})
+  0.00     20.17     0.00      150     0.00     4.87  void std::__sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  0.00     20.17     0.00       51     0.00     0.03  void std::__make_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&)
+  0.00     20.17     0.00       51     0.00     0.03  void std::__heap_select<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  0.00     20.17     0.00       51     0.00     0.30  void std::__partial_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  0.00     20.17     0.00        1     0.00     0.00  initialize(Trip*, int (*) [2])
+  0.00     20.17     0.00        1     0.00    10.00  calculateDistanceMatrix(int (*) [2])
+  0.00     20.17     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     20.17     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     20.17     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     20.17     0.00        1     0.00     0.00  Timer::lap()
+  0.00     20.17     0.00        1     0.00     0.00  Timer::start()
+  0.00     20.17     0.00        1     0.00     0.00  Timer::Timer()
+  0.00     20.17     0.00        1     0.00     5.00  std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed(unsigned long)
+  0.00     20.17     0.00        1     0.00     5.00  std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::mersenne_twister_engine(unsigned long)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.05% of 20.17 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     88.1    1.37   16.41                 _GLOBAL__sub_I_distanceMatrix [1]
+                0.60    7.62 265804680/265804680     std::vector<bool, std::allocator<bool> >::operator[](unsigned long) [2]
+                1.05    3.90 135000000/135000000     followingCity(Trip const&, char) [3]
+                0.87    0.00 651819220/651819220     cityIndex(char) [11]
+                0.02    0.73 12738855/12738855     std::vector<int, std::allocator<int> >::push_back(int const&) [14]
+                0.41    0.00 198304680/198304680     std::_Bit_reference::operator bool() const [24]
+                0.04    0.22 9414606/9414606     int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&) [28]
+                0.01    0.22 1875000/1875000     std::vector<bool, std::allocator<bool> >::vector(unsigned long, bool const&, std::allocator<bool> const&) [29]
+                0.23    0.00 67500000/67500000     std::_Bit_reference::operator=(bool) [30]
+                0.03    0.15 1875000/1875000     std::vector<bool, std::allocator<bool> >::~vector() [35]
+                0.00    0.10 1862630/1862630     std::vector<int, std::allocator<int> >::vector() [58]
+                0.08    0.00 65625000/65625000     indexToCity(int) [62]
+                0.01    0.03 1862630/1862630     std::vector<int, std::allocator<int> >::~vector() [72]
+                0.01    0.01 7486913/7486913     std::uniform_int_distribution<int>::uniform_int_distribution(int, int) [80]
+                0.01    0.01 1875000/1875000     std::allocator<bool>::~allocator() [88]
+                0.02    0.00 1862630/1862630     std::vector<int, std::allocator<int> >::operator[](unsigned long) [89]
+                0.00    0.01 5625000/5625000     crossoverRng() [116]
+                0.00    0.00 1862630/27564826     std::vector<int, std::allocator<int> >::size() const [66]
+                0.00    0.00 1875000/1875000     std::allocator<bool>::allocator() [148]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [173]
+-----------------------------------------------
+                0.60    7.62 265804680/265804680     _GLOBAL__sub_I_distanceMatrix [1]
+[2]     40.7    0.60    7.62 265804680         std::vector<bool, std::allocator<bool> >::operator[](unsigned long) [2]
+                0.52    4.28 265804680/265804680     std::_Bit_iterator::operator[](long) const [4]
+                1.98    0.85 265804680/265804680     std::vector<bool, std::allocator<bool> >::begin() [7]
+-----------------------------------------------
+                1.05    3.90 135000000/135000000     _GLOBAL__sub_I_distanceMatrix [1]
+[3]     24.6    1.05    3.90 135000000         followingCity(Trip const&, char) [3]
+                3.90    0.00 135000000/135000000     findCityIndex(Trip const&, char) [5]
+-----------------------------------------------
+                0.52    4.28 265804680/265804680     std::vector<bool, std::allocator<bool> >::operator[](unsigned long) [2]
+[4]     23.8    0.52    4.28 265804680         std::_Bit_iterator::operator[](long) const [4]
+                2.12    1.12 265804680/267679680     std::operator+(std::_Bit_iterator const&, long) [6]
+                0.58    0.46 265804680/265804680     std::_Bit_iterator::operator*() const [10]
+-----------------------------------------------
+                3.90    0.00 135000000/135000000     followingCity(Trip const&, char) [3]
+[5]     19.4    3.90    0.00 135000000         findCityIndex(Trip const&, char) [5]
+-----------------------------------------------
+                0.01    0.01 1875000/267679680     std::vector<bool, std::allocator<bool> >::_M_initialize(unsigned long) [60]
+                2.12    1.12 265804680/267679680     std::_Bit_iterator::operator[](long) const [4]
+[6]     16.2    2.13    1.12 267679680         std::operator+(std::_Bit_iterator const&, long) [6]
+                0.46    0.67 267679680/267679680     std::_Bit_iterator::operator+=(long) [9]
+-----------------------------------------------
+                1.98    0.85 265804680/265804680     std::vector<bool, std::allocator<bool> >::operator[](unsigned long) [2]
+[7]     14.0    1.98    0.85 265804680         std::vector<bool, std::allocator<bool> >::begin() [7]
+                0.54    0.31 265804680/267679680     std::_Bit_iterator::_Bit_iterator(unsigned long*, unsigned int) [12]
+-----------------------------------------------
+                                                 <spontaneous>
+[8]      7.9    1.59    0.00                 _init [8]
+-----------------------------------------------
+                0.46    0.67 267679680/267679680     std::operator+(std::_Bit_iterator const&, long) [6]
+[9]      5.6    0.46    0.67 267679680         std::_Bit_iterator::operator+=(long) [9]
+                0.67    0.00 267679680/267679680     std::_Bit_iterator_base::_M_incr(long) [18]
+-----------------------------------------------
+                0.58    0.46 265804680/265804680     std::_Bit_iterator::operator[](long) const [4]
+[10]     5.2    0.58    0.46 265804680         std::_Bit_iterator::operator*() const [10]
+                0.46    0.00 265804680/265804680     std::_Bit_reference::_Bit_reference(unsigned long*, unsigned long) [23]
+-----------------------------------------------
+                0.87    0.00 651819220/651819220     _GLOBAL__sub_I_distanceMatrix [1]
+[11]     4.3    0.87    0.00 651819220         cityIndex(char) [11]
+-----------------------------------------------
+                0.00    0.00 1875000/267679680     std::vector<bool, std::allocator<bool> >::_M_initialize(unsigned long) [60]
+                0.54    0.31 265804680/267679680     std::vector<bool, std::allocator<bool> >::begin() [7]
+[12]     4.2    0.55    0.31 267679680         std::_Bit_iterator::_Bit_iterator(unsigned long*, unsigned int) [12]
+                0.31    0.00 267679680/275179680     std::_Bit_iterator_base::_Bit_iterator_base(unsigned long*, unsigned int) [25]
+-----------------------------------------------
+                                                 <spontaneous>
+[13]     3.8    0.00    0.77                 main [13]
+                0.00    0.73     150/150         evaluate(Trip*, int (*) [2]) [15]
+                0.02    0.00     150/150         select(Trip*, Trip*) [90]
+                0.01    0.00     150/150         populate(Trip*, Trip*) [108]
+                0.00    0.01       1/1           calculateDistanceMatrix(int (*) [2]) [110]
+                0.00    0.00     150/150         crossover(Trip*, Trip*, int (*) [2]) [167]
+                0.00    0.00     150/150         mutate(Trip*) [166]
+                0.00    0.00       1/1           initialize(Trip*, int (*) [2]) [170]
+                0.00    0.00       1/1           Timer::Timer() [176]
+                0.00    0.00       1/1           Timer::start() [175]
+                0.00    0.00       1/1           Timer::lap() [174]
+-----------------------------------------------
+                0.02    0.73 12738855/12738855     _GLOBAL__sub_I_distanceMatrix [1]
+[14]     3.7    0.02    0.73 12738855         std::vector<int, std::allocator<int> >::push_back(int const&) [14]
+                0.04    0.62 6425549/6425549     void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [19]
+                0.01    0.04 6313306/12738855     void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std::allocator<int>&, int*, int const&) [59]
+                0.01    0.01 6425549/6425549     std::vector<int, std::allocator<int> >::end() [85]
+-----------------------------------------------
+                0.00    0.73     150/150         main [13]
+[15]     3.6    0.00    0.73     150         evaluate(Trip*, int (*) [2]) [15]
+                0.00    0.73     150/150         void std::sort<Trip*, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(Trip*, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}) [16]
+-----------------------------------------------
+                0.00    0.73     150/150         evaluate(Trip*, int (*) [2]) [15]
+[16]     3.6    0.00    0.73     150         void std::sort<Trip*, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(Trip*, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}) [16]
+                0.00    0.73     150/150         void std::__sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [17]
+                0.00    0.00     150/150         __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> __gnu_cxx::__ops::__iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(__gnu_cxx::__ops::_Iter_comp_iter) [169]
+-----------------------------------------------
+                0.00    0.73     150/150         void std::sort<Trip*, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(Trip*, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}) [16]
+[17]     3.6    0.00    0.73     150         void std::__sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [17]
+                0.01    0.57     150/150         void std::__introsort_loop<Trip*, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [20]
+                0.00    0.14     150/150         void std::__final_insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [47]
+                0.01    0.00     150/150         std::__lg(long) [109]
+-----------------------------------------------
+                0.67    0.00 267679680/267679680     std::_Bit_iterator::operator+=(long) [9]
+[18]     3.3    0.67    0.00 267679680         std::_Bit_iterator_base::_M_incr(long) [18]
+-----------------------------------------------
+                0.04    0.62 6425549/6425549     std::vector<int, std::allocator<int> >::push_back(int const&) [14]
+[19]     3.3    0.04    0.62 6425549         void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [19]
+                0.02    0.25 6425549/6425549     std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [27]
+                0.02    0.14 12851098/12851098     std::vector<int, std::allocator<int> >::_S_relocate(int*, int*, int*, std::allocator<int>&) [37]
+                0.01    0.04 6425549/12738855     void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std::allocator<int>&, int*, int const&) [59]
+                0.01    0.03 6425549/6425549     std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [71]
+                0.03    0.00 6425549/8288179     std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [75]
+                0.02    0.01 6425549/6425549     std::vector<int, std::allocator<int> >::begin() [79]
+                0.01    0.00 12851098/25702196     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const [83]
+                0.00    0.01 6425549/6425549     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::difference_type __gnu_cxx::operator-<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [100]
+                0.01    0.00 12851098/14713728     std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [97]
+                0.00    0.00 6425549/31903259     int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [96]
+-----------------------------------------------
+                              673121             void std::__introsort_loop<Trip*, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [20]
+                0.01    0.57     150/150         void std::__sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [17]
+[20]     2.9    0.01    0.57     150+673121  void std::__introsort_loop<Trip*, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [20]
+                0.01    0.55  673121/673121      Trip* std::__unguarded_partition_pivot<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [21]
+                0.00    0.02      51/51          void std::__partial_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [91]
+                              673121             void std::__introsort_loop<Trip*, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [20]
+-----------------------------------------------
+                0.01    0.55  673121/673121      void std::__introsort_loop<Trip*, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [20]
+[21]     2.8    0.01    0.55  673121         Trip* std::__unguarded_partition_pivot<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [21]
+                0.03    0.50  673121/673121      Trip* std::__unguarded_partition<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [22]
+                0.01    0.01  673121/673121      void std::__move_median_to_first<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [94]
+-----------------------------------------------
+                0.03    0.50  673121/673121      Trip* std::__unguarded_partition_pivot<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [21]
+[22]     2.6    0.03    0.50  673121         Trip* std::__unguarded_partition<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [22]
+                0.16    0.12 106553146/108425268     bool __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip*, Trip*>(Trip*, Trip*) [26]
+                0.00    0.22 29635918/30309039     void std::iter_swap<Trip*, Trip*>(Trip*, Trip*) [32]
+-----------------------------------------------
+                0.46    0.00 265804680/265804680     std::_Bit_iterator::operator*() const [10]
+[23]     2.3    0.46    0.00 265804680         std::_Bit_reference::_Bit_reference(unsigned long*, unsigned long) [23]
+-----------------------------------------------
+                0.41    0.00 198304680/198304680     _GLOBAL__sub_I_distanceMatrix [1]
+[24]     2.1    0.41    0.00 198304680         std::_Bit_reference::operator bool() const [24]
+-----------------------------------------------
+                0.01    0.00 7500000/275179680     std::_Bit_iterator::_Bit_iterator() [44]
+                0.31    0.00 267679680/275179680     std::_Bit_iterator::_Bit_iterator(unsigned long*, unsigned int) [12]
+[25]     1.6    0.32    0.00 275179680         std::_Bit_iterator_base::_Bit_iterator_base(unsigned long*, unsigned int) [25]
+-----------------------------------------------
+                0.00    0.00    2250/108425268     void std::__insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [130]
+                0.00    0.00   12436/108425268     void std::__adjust_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [112]
+                0.00    0.00 1857436/108425268     void std::__move_median_to_first<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [94]
+                0.16    0.12 106553146/108425268     Trip* std::__unguarded_partition<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [22]
+[26]     1.4    0.17    0.12 108425268         bool __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip*, Trip*>(Trip*, Trip*) [26]
+                0.12    0.00 108425268/123408082     evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}::operator()(Trip const&, Trip const&) const [46]
+-----------------------------------------------
+                0.02    0.25 6425549/6425549     void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [19]
+[27]     1.3    0.02    0.25 6425549         std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [27]
+                0.01    0.17 12851098/12851098     std::vector<int, std::allocator<int> >::max_size() const [34]
+                0.06    0.00 25702196/27564826     std::vector<int, std::allocator<int> >::size() const [66]
+                0.01    0.00 6425549/6425549     unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [101]
+-----------------------------------------------
+                0.04    0.22 9414606/9414606     _GLOBAL__sub_I_distanceMatrix [1]
+[28]     1.3    0.04    0.22 9414606         int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&) [28]
+                0.00    0.22 9414606/9414606     int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, std::uniform_int_distribution<int>::param_type const&) [33]
+-----------------------------------------------
+                0.01    0.22 1875000/1875000     _GLOBAL__sub_I_distanceMatrix [1]
+[29]     1.2    0.01    0.22 1875000         std::vector<bool, std::allocator<bool> >::vector(unsigned long, bool const&, std::allocator<bool> const&) [29]
+                0.00    0.13 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::_Bvector_base(std::allocator<bool> const&) [49]
+                0.00    0.09 1875000/1875000     std::vector<bool, std::allocator<bool> >::_M_initialize(unsigned long) [60]
+                0.00    0.00 1875000/1875000     std::vector<bool, std::allocator<bool> >::_M_initialize_value(bool) [127]
+-----------------------------------------------
+                0.23    0.00 67500000/67500000     _GLOBAL__sub_I_distanceMatrix [1]
+[30]     1.1    0.23    0.00 67500000         std::_Bit_reference::operator=(bool) [30]
+-----------------------------------------------
+                0.12    0.10 30309039/30309039     void std::iter_swap<Trip*, Trip*>(Trip*, Trip*) [32]
+[31]     1.1    0.12    0.10 30309039         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Trip> >, std::is_move_constructible<Trip>, std::is_move_assignable<Trip> >::value, void>::type std::swap<Trip>(Trip&, Trip&) [31]
+                0.10    0.00 90927117/113436750     std::remove_reference<Trip&>::type&& std::move<Trip&>(Trip&) [50]
+-----------------------------------------------
+                0.00    0.00  673121/30309039     void std::__move_median_to_first<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [94]
+                0.00    0.22 29635918/30309039     Trip* std::__unguarded_partition<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [22]
+[32]     1.1    0.00    0.22 30309039         void std::iter_swap<Trip*, Trip*>(Trip*, Trip*) [32]
+                0.12    0.10 30309039/30309039     std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Trip> >, std::is_move_constructible<Trip>, std::is_move_assignable<Trip> >::value, void>::type std::swap<Trip>(Trip&, Trip&) [31]
+-----------------------------------------------
+                0.00    0.22 9414606/9414606     int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&) [28]
+[33]     1.1    0.00    0.22 9414606         int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, std::uniform_int_distribution<int>::param_type const&) [33]
+                0.01    0.15 9414606/9414606     unsigned int std::uniform_int_distribution<int>::_S_nd<unsigned long, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>, unsigned int>(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, unsigned int) [38]
+                0.05    0.00 18829212/18829212     std::uniform_int_distribution<int>::param_type::a() const [69]
+                0.01    0.00 9414606/9414606     std::uniform_int_distribution<int>::param_type::b() const [115]
+-----------------------------------------------
+                0.01    0.17 12851098/12851098     std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [27]
+[34]     0.9    0.01    0.17 12851098         std::vector<int, std::allocator<int> >::max_size() const [34]
+                0.01    0.16 12851098/12851098     std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [36]
+                0.01    0.00 12851098/12851098     std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const [114]
+-----------------------------------------------
+                0.03    0.15 1875000/1875000     _GLOBAL__sub_I_distanceMatrix [1]
+[35]     0.9    0.03    0.15 1875000         std::vector<bool, std::allocator<bool> >::~vector() [35]
+                0.00    0.15 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::~_Bvector_base() [41]
+-----------------------------------------------
+                0.01    0.16 12851098/12851098     std::vector<int, std::allocator<int> >::max_size() const [34]
+[36]     0.8    0.01    0.16 12851098         std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [36]
+                0.08    0.00 12851098/12851098     unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [63]
+                0.03    0.05 12851098/12851098     std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&) [64]
+-----------------------------------------------
+                0.02    0.14 12851098/12851098     void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [19]
+[37]     0.8    0.02    0.14 12851098         std::vector<int, std::allocator<int> >::_S_relocate(int*, int*, int*, std::allocator<int>&) [37]
+                0.00    0.14 12851098/12851098     std::vector<int, std::allocator<int> >::_S_do_relocate(int*, int*, int*, std::allocator<int>&, std::integral_constant<bool, true>) [42]
+-----------------------------------------------
+                0.01    0.15 9414606/9414606     int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, std::uniform_int_distribution<int>::param_type const&) [33]
+[38]     0.8    0.01    0.15 9414606         unsigned int std::uniform_int_distribution<int>::_S_nd<unsigned long, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>, unsigned int>(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, unsigned int) [38]
+                0.03    0.12 9414606/9414606     std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator()() [40]
+-----------------------------------------------
+                0.01    0.07 1875000/3750000     std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::_Bvector_impl(std::allocator<unsigned long> const&) [53]
+                0.01    0.07 1875000/3750000     std::_Bvector_base<std::allocator<bool> >::_Bvector_impl_data::_M_reset() [54]
+[39]     0.8    0.01    0.14 3750000         std::_Bvector_base<std::allocator<bool> >::_Bvector_impl_data::_Bvector_impl_data() [39]
+                0.14    0.01 7500000/7500000     std::_Bit_iterator::_Bit_iterator() [44]
+-----------------------------------------------
+                0.03    0.12 9414606/9414606     unsigned int std::uniform_int_distribution<int>::_S_nd<unsigned long, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>, unsigned int>(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, unsigned int) [38]
+[40]     0.7    0.03    0.12 9414606         std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator()() [40]
+                0.12    0.00   15088/15088       std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand() [52]
+-----------------------------------------------
+                0.00    0.15 1875000/1875000     std::vector<bool, std::allocator<bool> >::~vector() [35]
+[41]     0.7    0.00    0.15 1875000         std::_Bvector_base<std::allocator<bool> >::~_Bvector_base() [41]
+                0.02    0.12 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::_M_deallocate() [45]
+                0.00    0.01 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::~_Bvector_impl() [111]
+-----------------------------------------------
+                0.00    0.14 12851098/12851098     std::vector<int, std::allocator<int> >::_S_relocate(int*, int*, int*, std::allocator<int>&) [37]
+[42]     0.7    0.00    0.14 12851098         std::vector<int, std::allocator<int> >::_S_do_relocate(int*, int*, int*, std::allocator<int>&, std::integral_constant<bool, true>) [42]
+                0.02    0.12 12851098/12851098     int* std::__relocate_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&) [43]
+-----------------------------------------------
+                0.02    0.12 12851098/12851098     std::vector<int, std::allocator<int> >::_S_do_relocate(int*, int*, int*, std::allocator<int>&, std::integral_constant<bool, true>) [42]
+[43]     0.7    0.02    0.12 12851098         int* std::__relocate_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&) [43]
+                0.09    0.00 38553294/38553294     int* std::__niter_base<int*>(int*) [61]
+                0.04    0.00 12851098/12851098     std::enable_if<std::__is_bitwise_relocatable<int, void>::value, int*>::type std::__relocate_a_1<int, int>(int*, int*, int*, std::allocator<int>&) [73]
+-----------------------------------------------
+                0.14    0.01 7500000/7500000     std::_Bvector_base<std::allocator<bool> >::_Bvector_impl_data::_Bvector_impl_data() [39]
+[44]     0.7    0.14    0.01 7500000         std::_Bit_iterator::_Bit_iterator() [44]
+                0.01    0.00 7500000/275179680     std::_Bit_iterator_base::_Bit_iterator_base(unsigned long*, unsigned int) [25]
+-----------------------------------------------
+                0.02    0.12 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::~_Bvector_base() [41]
+[45]     0.7    0.02    0.12 1875000         std::_Bvector_base<std::allocator<bool> >::_M_deallocate() [45]
+                0.04    0.08 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::_Bvector_impl_data::_M_reset() [54]
+                0.01    0.00 1875000/1875000     std::allocator_traits<std::allocator<unsigned long> >::deallocate(std::allocator<unsigned long>&, unsigned long*, unsigned long) [120]
+                0.00    0.00 1875000/3750000     std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::_M_end_addr() const [117]
+-----------------------------------------------
+                0.00    0.00    4598/123408082     bool __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip*, Trip>(Trip*, Trip&) [132]
+                0.02    0.00 14978216/123408082     bool __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip, Trip*>(Trip&, Trip*) [68]
+                0.12    0.00 108425268/123408082     bool __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip*, Trip*>(Trip*, Trip*) [26]
+[46]     0.7    0.14    0.00 123408082         evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}::operator()(Trip const&, Trip const&) const [46]
+-----------------------------------------------
+                0.00    0.14     150/150         void std::__sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [17]
+[47]     0.7    0.00    0.14     150         void std::__final_insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [47]
+                0.00    0.14     150/150         void std::__unguarded_insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [48]
+                0.00    0.00     150/150         void std::__insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [130]
+-----------------------------------------------
+                0.00    0.14     150/150         void std::__final_insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [47]
+[48]     0.7    0.00    0.14     150         void std::__unguarded_insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [48]
+                0.05    0.08 7497600/7499668     void std::__unguarded_linear_insert<Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [51]
+                0.01    0.00 7497600/7499668     __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> __gnu_cxx::__ops::__val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(__gnu_cxx::__ops::_Iter_comp_iter<__gnu_cxx::__ops::_Val_comp_iter>) [98]
+-----------------------------------------------
+                0.00    0.13 1875000/1875000     std::vector<bool, std::allocator<bool> >::vector(unsigned long, bool const&, std::allocator<bool> const&) [29]
+[49]     0.7    0.00    0.13 1875000         std::_Bvector_base<std::allocator<bool> >::_Bvector_base(std::allocator<bool> const&) [49]
+                0.00    0.12 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::_Bvector_impl(std::allocator<unsigned long> const&) [53]
+                0.00    0.01 1875000/3750000     std::allocator<unsigned long>::~allocator() [93]
+                0.00    0.01 1875000/1875000     std::allocator<unsigned long>::allocator<bool>(std::allocator<bool> const&) [119]
+-----------------------------------------------
+                0.00    0.00     364/113436750     void std::__insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [130]
+                0.00    0.00    2510/113436750     void std::__make_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [128]
+                0.00    0.00    4993/113436750     void std::__push_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [131]
+                0.00    0.00    7446/113436750     void std::__pop_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [126]
+                0.00    0.00   16436/113436750     void std::__adjust_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [112]
+                0.03    0.00 22477884/113436750     void std::__unguarded_linear_insert<Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [51]
+                0.10    0.00 90927117/113436750     std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Trip> >, std::is_move_constructible<Trip>, std::is_move_assignable<Trip> >::value, void>::type std::swap<Trip>(Trip&, Trip&) [31]
+[50]     0.6    0.13    0.00 113436750         std::remove_reference<Trip&>::type&& std::move<Trip&>(Trip&) [50]
+-----------------------------------------------
+                0.00    0.00    2068/7499668     void std::__insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [130]
+                0.05    0.08 7497600/7499668     void std::__unguarded_insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [48]
+[51]     0.6    0.05    0.08 7499668         void std::__unguarded_linear_insert<Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [51]
+                0.04    0.02 14978216/14978216     bool __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip, Trip*>(Trip&, Trip*) [68]
+                0.03    0.00 22477884/113436750     std::remove_reference<Trip&>::type&& std::move<Trip&>(Trip&) [50]
+-----------------------------------------------
+                0.12    0.00   15088/15088       std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator()() [40]
+[52]     0.6    0.12    0.00   15088         std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand() [52]
+-----------------------------------------------
+                0.00    0.12 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::_Bvector_base(std::allocator<bool> const&) [49]
+[53]     0.6    0.00    0.12 1875000         std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::_Bvector_impl(std::allocator<unsigned long> const&) [53]
+                0.01    0.07 1875000/3750000     std::_Bvector_base<std::allocator<bool> >::_Bvector_impl_data::_Bvector_impl_data() [39]
+                0.02    0.02 1875000/1875000     std::allocator<unsigned long>::allocator(std::allocator<unsigned long> const&) [76]
+-----------------------------------------------
+                0.04    0.08 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::_M_deallocate() [45]
+[54]     0.6    0.04    0.08 1875000         std::_Bvector_base<std::allocator<bool> >::_Bvector_impl_data::_M_reset() [54]
+                0.01    0.07 1875000/3750000     std::_Bvector_base<std::allocator<bool> >::_Bvector_impl_data::_Bvector_impl_data() [39]
+-----------------------------------------------
+                0.10    0.01 1862630/1862630     std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [56]
+[55]     0.5    0.10    0.01 1862630         std::allocator<int>::allocator() [55]
+                0.01    0.00 1862630/1862630     __gnu_cxx::new_allocator<int>::new_allocator() [121]
+-----------------------------------------------
+                0.00    0.10 1862630/1862630     std::_Vector_base<int, std::allocator<int> >::_Vector_base() [57]
+[56]     0.5    0.00    0.10 1862630         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [56]
+                0.10    0.01 1862630/1862630     std::allocator<int>::allocator() [55]
+                0.00    0.00 1862630/1862630     std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data() [151]
+-----------------------------------------------
+                0.00    0.10 1862630/1862630     std::vector<int, std::allocator<int> >::vector() [58]
+[57]     0.5    0.00    0.10 1862630         std::_Vector_base<int, std::allocator<int> >::_Vector_base() [57]
+                0.00    0.10 1862630/1862630     std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [56]
+-----------------------------------------------
+                0.00    0.10 1862630/1862630     _GLOBAL__sub_I_distanceMatrix [1]
+[58]     0.5    0.00    0.10 1862630         std::vector<int, std::allocator<int> >::vector() [58]
+                0.00    0.10 1862630/1862630     std::_Vector_base<int, std::allocator<int> >::_Vector_base() [57]
+-----------------------------------------------
+                0.01    0.04 6313306/12738855     std::vector<int, std::allocator<int> >::push_back(int const&) [14]
+                0.01    0.04 6425549/12738855     void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [19]
+[59]     0.5    0.02    0.08 12738855         void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std::allocator<int>&, int*, int const&) [59]
+                0.03    0.04 12738855/12738855     void __gnu_cxx::new_allocator<int>::construct<int, int const&>(int*, int const&) [65]
+                0.00    0.00 12738855/31903259     int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [96]
+-----------------------------------------------
+                0.00    0.09 1875000/1875000     std::vector<bool, std::allocator<bool> >::vector(unsigned long, bool const&, std::allocator<bool> const&) [29]
+[60]     0.4    0.00    0.09 1875000         std::vector<bool, std::allocator<bool> >::_M_initialize(unsigned long) [60]
+                0.03    0.02 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::_M_allocate(unsigned long) [70]
+                0.01    0.01 1875000/267679680     std::operator+(std::_Bit_iterator const&, long) [6]
+                0.01    0.00 1875000/3750000     std::_Bvector_base<std::allocator<bool> >::_S_nword(unsigned long) [86]
+                0.00    0.00 1875000/267679680     std::_Bit_iterator::_Bit_iterator(unsigned long*, unsigned int) [12]
+                0.00    0.00 1875000/5625000     unsigned long* std::__addressof<unsigned long>(unsigned long&) [144]
+-----------------------------------------------
+                0.09    0.00 38553294/38553294     int* std::__relocate_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&) [43]
+[61]     0.4    0.09    0.00 38553294         int* std::__niter_base<int*>(int*) [61]
+-----------------------------------------------
+                0.08    0.00 65625000/65625000     _GLOBAL__sub_I_distanceMatrix [1]
+[62]     0.4    0.08    0.00 65625000         indexToCity(int) [62]
+-----------------------------------------------
+                0.08    0.00 12851098/12851098     std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [36]
+[63]     0.4    0.08    0.00 12851098         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [63]
+-----------------------------------------------
+                0.03    0.05 12851098/12851098     std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [36]
+[64]     0.4    0.03    0.05 12851098         std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&) [64]
+                0.05    0.00 12851098/12851098     __gnu_cxx::new_allocator<int>::max_size() const [67]
+-----------------------------------------------
+                0.03    0.04 12738855/12738855     void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std::allocator<int>&, int*, int const&) [59]
+[65]     0.4    0.03    0.04 12738855         void __gnu_cxx::new_allocator<int>::construct<int, int const&>(int*, int const&) [65]
+                0.04    0.00 12738855/12738855     operator new(unsigned long, void*) [74]
+                0.00    0.00 12738855/31903259     int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [96]
+-----------------------------------------------
+                0.00    0.00 1862630/27564826     _GLOBAL__sub_I_distanceMatrix [1]
+                0.06    0.00 25702196/27564826     std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [27]
+[66]     0.3    0.06    0.00 27564826         std::vector<int, std::allocator<int> >::size() const [66]
+-----------------------------------------------
+                0.05    0.00 12851098/12851098     std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&) [64]
+[67]     0.3    0.05    0.00 12851098         __gnu_cxx::new_allocator<int>::max_size() const [67]
+                0.00    0.00 12851098/19276647     __gnu_cxx::new_allocator<int>::_M_max_size() const [113]
+-----------------------------------------------
+                0.04    0.02 14978216/14978216     void std::__unguarded_linear_insert<Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [51]
+[68]     0.3    0.04    0.02 14978216         bool __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip, Trip*>(Trip&, Trip*) [68]
+                0.02    0.00 14978216/123408082     evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}::operator()(Trip const&, Trip const&) const [46]
+-----------------------------------------------
+                0.05    0.00 18829212/18829212     int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, std::uniform_int_distribution<int>::param_type const&) [33]
+[69]     0.2    0.05    0.00 18829212         std::uniform_int_distribution<int>::param_type::a() const [69]
+-----------------------------------------------
+                0.03    0.02 1875000/1875000     std::vector<bool, std::allocator<bool> >::_M_initialize(unsigned long) [60]
+[70]     0.2    0.03    0.02 1875000         std::_Bvector_base<std::allocator<bool> >::_M_allocate(unsigned long) [70]
+                0.01    0.00 1875000/3750000     std::_Bvector_base<std::allocator<bool> >::_S_nword(unsigned long) [86]
+                0.00    0.01 1875000/1875000     std::allocator_traits<std::allocator<unsigned long> >::allocate(std::allocator<unsigned long>&, unsigned long) [104]
+-----------------------------------------------
+                0.01    0.03 6425549/6425549     void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [19]
+[71]     0.2    0.01    0.03 6425549         std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [71]
+                0.01    0.02 6425549/6425549     std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [78]
+-----------------------------------------------
+                0.01    0.03 1862630/1862630     _GLOBAL__sub_I_distanceMatrix [1]
+[72]     0.2    0.01    0.03 1862630         std::vector<int, std::allocator<int> >::~vector() [72]
+                0.01    0.02 1862630/1862630     std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [81]
+                0.00    0.00 1862630/14713728     std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [97]
+                0.00    0.00 1862630/1862630     void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [153]
+-----------------------------------------------
+                0.04    0.00 12851098/12851098     int* std::__relocate_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&) [43]
+[73]     0.2    0.04    0.00 12851098         std::enable_if<std::__is_bitwise_relocatable<int, void>::value, int*>::type std::__relocate_a_1<int, int>(int*, int*, int*, std::allocator<int>&) [73]
+-----------------------------------------------
+                0.04    0.00 12738855/12738855     void __gnu_cxx::new_allocator<int>::construct<int, int const&>(int*, int const&) [65]
+[74]     0.2    0.04    0.00 12738855         operator new(unsigned long, void*) [74]
+-----------------------------------------------
+                0.01    0.00 1862630/8288179     std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [81]
+                0.03    0.00 6425549/8288179     void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [19]
+[75]     0.2    0.04    0.00 8288179         std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [75]
+                0.00    0.00 6425549/6425549     std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [143]
+-----------------------------------------------
+                0.02    0.02 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::_Bvector_impl(std::allocator<unsigned long> const&) [53]
+[76]     0.2    0.02    0.02 1875000         std::allocator<unsigned long>::allocator(std::allocator<unsigned long> const&) [76]
+                0.02    0.00 1875000/1875000     __gnu_cxx::new_allocator<unsigned long>::new_allocator(__gnu_cxx::new_allocator<unsigned long> const&) [87]
+-----------------------------------------------
+                                                 <spontaneous>
+[77]     0.2    0.04    0.00                 _GLOBAL__sub_I__ZN5TimerC2Ev [77]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [172]
+-----------------------------------------------
+                0.01    0.02 6425549/6425549     std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [71]
+[78]     0.2    0.01    0.02 6425549         std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [78]
+                0.02    0.00 6425549/6425549     __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [82]
+-----------------------------------------------
+                0.02    0.01 6425549/6425549     void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [19]
+[79]     0.1    0.02    0.01 6425549         std::vector<int, std::allocator<int> >::begin() [79]
+                0.01    0.00 6425549/12851098     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&) [84]
+-----------------------------------------------
+                0.01    0.01 7486913/7486913     _GLOBAL__sub_I_distanceMatrix [1]
+[80]     0.1    0.01    0.01 7486913         std::uniform_int_distribution<int>::uniform_int_distribution(int, int) [80]
+                0.01    0.00 7486913/7486913     std::uniform_int_distribution<int>::param_type::param_type(int, int) [99]
+-----------------------------------------------
+                0.01    0.02 1862630/1862630     std::vector<int, std::allocator<int> >::~vector() [72]
+[81]     0.1    0.01    0.02 1862630         std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [81]
+                0.00    0.01 1862630/1862630     std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [106]
+                0.01    0.00 1862630/8288179     std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [75]
+-----------------------------------------------
+                0.02    0.00 6425549/6425549     std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [78]
+[82]     0.1    0.02    0.00 6425549         __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [82]
+                0.00    0.00 6425549/19276647     __gnu_cxx::new_allocator<int>::_M_max_size() const [113]
+-----------------------------------------------
+                0.01    0.00 12851098/25702196     void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [19]
+                0.01    0.00 12851098/25702196     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::difference_type __gnu_cxx::operator-<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [100]
+[83]     0.1    0.02    0.00 25702196         __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const [83]
+-----------------------------------------------
+                0.01    0.00 6425549/12851098     std::vector<int, std::allocator<int> >::end() [85]
+                0.01    0.00 6425549/12851098     std::vector<int, std::allocator<int> >::begin() [79]
+[84]     0.1    0.02    0.00 12851098         __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&) [84]
+-----------------------------------------------
+                0.01    0.01 6425549/6425549     std::vector<int, std::allocator<int> >::push_back(int const&) [14]
+[85]     0.1    0.01    0.01 6425549         std::vector<int, std::allocator<int> >::end() [85]
+                0.01    0.00 6425549/12851098     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&) [84]
+-----------------------------------------------
+                0.01    0.00 1875000/3750000     std::vector<bool, std::allocator<bool> >::_M_initialize(unsigned long) [60]
+                0.01    0.00 1875000/3750000     std::_Bvector_base<std::allocator<bool> >::_M_allocate(unsigned long) [70]
+[86]     0.1    0.02    0.00 3750000         std::_Bvector_base<std::allocator<bool> >::_S_nword(unsigned long) [86]
+-----------------------------------------------
+                0.02    0.00 1875000/1875000     std::allocator<unsigned long>::allocator(std::allocator<unsigned long> const&) [76]
+[87]     0.1    0.02    0.00 1875000         __gnu_cxx::new_allocator<unsigned long>::new_allocator(__gnu_cxx::new_allocator<unsigned long> const&) [87]
+-----------------------------------------------
+                0.01    0.01 1875000/1875000     _GLOBAL__sub_I_distanceMatrix [1]
+[88]     0.1    0.01    0.01 1875000         std::allocator<bool>::~allocator() [88]
+                0.01    0.00 1875000/1875000     __gnu_cxx::new_allocator<bool>::~new_allocator() [102]
+-----------------------------------------------
+                0.02    0.00 1862630/1862630     _GLOBAL__sub_I_distanceMatrix [1]
+[89]     0.1    0.02    0.00 1862630         std::vector<int, std::allocator<int> >::operator[](unsigned long) [89]
+-----------------------------------------------
+                0.02    0.00     150/150         main [13]
+[90]     0.1    0.02    0.00     150         select(Trip*, Trip*) [90]
+-----------------------------------------------
+                0.00    0.02      51/51          void std::__introsort_loop<Trip*, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [20]
+[91]     0.1    0.00    0.02      51         void std::__partial_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [91]
+                0.01    0.00      51/51          void std::__sort_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [95]
+                0.00    0.00      51/51          void std::__heap_select<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [129]
+-----------------------------------------------
+                0.01    0.00 3750000/3750000     std::allocator<unsigned long>::~allocator() [93]
+[92]     0.1    0.01    0.00 3750000         __gnu_cxx::new_allocator<unsigned long>::~new_allocator() [92]
+-----------------------------------------------
+                0.00    0.01 1875000/3750000     std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::~_Bvector_impl() [111]
+                0.00    0.01 1875000/3750000     std::_Bvector_base<std::allocator<bool> >::_Bvector_base(std::allocator<bool> const&) [49]
+[93]     0.1    0.00    0.01 3750000         std::allocator<unsigned long>::~allocator() [93]
+                0.01    0.00 3750000/3750000     __gnu_cxx::new_allocator<unsigned long>::~new_allocator() [92]
+-----------------------------------------------
+                0.01    0.01  673121/673121      Trip* std::__unguarded_partition_pivot<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [21]
+[94]     0.1    0.01    0.01  673121         void std::__move_median_to_first<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [94]
+                0.00    0.00  673121/30309039     void std::iter_swap<Trip*, Trip*>(Trip*, Trip*) [32]
+                0.00    0.00 1857436/108425268     bool __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip*, Trip*>(Trip*, Trip*) [26]
+-----------------------------------------------
+                0.01    0.00      51/51          void std::__partial_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [91]
+[95]     0.1    0.01    0.00      51         void std::__sort_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [95]
+                0.00    0.00    2482/2482        void std::__pop_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [126]
+-----------------------------------------------
+                0.00    0.00 6425549/31903259     void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [19]
+                0.00    0.00 12738855/31903259     void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std::allocator<int>&, int*, int const&) [59]
+                0.00    0.00 12738855/31903259     void __gnu_cxx::new_allocator<int>::construct<int, int const&>(int*, int const&) [65]
+[96]     0.0    0.01    0.00 31903259         int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [96]
+-----------------------------------------------
+                0.00    0.00 1862630/14713728     std::vector<int, std::allocator<int> >::~vector() [72]
+                0.01    0.00 12851098/14713728     void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [19]
+[97]     0.0    0.01    0.00 14713728         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [97]
+-----------------------------------------------
+                0.00    0.00    2068/7499668     void std::__insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [130]
+                0.01    0.00 7497600/7499668     void std::__unguarded_insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [48]
+[98]     0.0    0.01    0.00 7499668         __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> __gnu_cxx::__ops::__val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(__gnu_cxx::__ops::_Iter_comp_iter<__gnu_cxx::__ops::_Val_comp_iter>) [98]
+                0.00    0.00 7499668/7503405     std::remove_reference<__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&>::type&& std::move<__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&>(std::remove_reference&&) [140]
+                0.00    0.00 7499668/7499668     __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Val_comp_iter(__gnu_cxx::__ops::_Iter_comp_iter<{lambda(Trip const&, Trip const&)#1}>&&) [141]
+-----------------------------------------------
+                0.01    0.00 7486913/7486913     std::uniform_int_distribution<int>::uniform_int_distribution(int, int) [80]
+[99]     0.0    0.01    0.00 7486913         std::uniform_int_distribution<int>::param_type::param_type(int, int) [99]
+-----------------------------------------------
+                0.00    0.01 6425549/6425549     void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [19]
+[100]    0.0    0.00    0.01 6425549         __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::difference_type __gnu_cxx::operator-<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [100]
+                0.01    0.00 12851098/25702196     __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const [83]
+-----------------------------------------------
+                0.01    0.00 6425549/6425549     std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [27]
+[101]    0.0    0.01    0.00 6425549         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [101]
+-----------------------------------------------
+                0.01    0.00 1875000/1875000     std::allocator<bool>::~allocator() [88]
+[102]    0.0    0.01    0.00 1875000         __gnu_cxx::new_allocator<bool>::~new_allocator() [102]
+-----------------------------------------------
+                0.01    0.00 1875000/1875000     std::allocator_traits<std::allocator<unsigned long> >::allocate(std::allocator<unsigned long>&, unsigned long) [104]
+[103]    0.0    0.01    0.00 1875000         __gnu_cxx::new_allocator<unsigned long>::allocate(unsigned long, void const*) [103]
+                0.00    0.00 1875000/1875000     __gnu_cxx::new_allocator<unsigned long>::_M_max_size() const [147]
+-----------------------------------------------
+                0.00    0.01 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::_M_allocate(unsigned long) [70]
+[104]    0.0    0.00    0.01 1875000         std::allocator_traits<std::allocator<unsigned long> >::allocate(std::allocator<unsigned long>&, unsigned long) [104]
+                0.01    0.00 1875000/1875000     __gnu_cxx::new_allocator<unsigned long>::allocate(unsigned long, void const*) [103]
+-----------------------------------------------
+                0.01    0.00 1862630/1862630     std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [106]
+[105]    0.0    0.01    0.00 1862630         std::allocator<int>::~allocator() [105]
+                0.00    0.00 1862630/1862630     __gnu_cxx::new_allocator<int>::~new_allocator() [149]
+-----------------------------------------------
+                0.00    0.01 1862630/1862630     std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [81]
+[106]    0.0    0.00    0.01 1862630         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [106]
+                0.01    0.00 1862630/1862630     std::allocator<int>::~allocator() [105]
+-----------------------------------------------
+                0.01    0.00    1332/1332        calculateDistanceMatrix(int (*) [2]) [110]
+[107]    0.0    0.01    0.00    1332         distance(int, int, int, int) [107]
+-----------------------------------------------
+                0.01    0.00     150/150         main [13]
+[108]    0.0    0.01    0.00     150         populate(Trip*, Trip*) [108]
+-----------------------------------------------
+                0.01    0.00     150/150         void std::__sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [17]
+[109]    0.0    0.01    0.00     150         std::__lg(long) [109]
+-----------------------------------------------
+                0.00    0.01       1/1           main [13]
+[110]    0.0    0.00    0.01       1         calculateDistanceMatrix(int (*) [2]) [110]
+                0.01    0.00    1332/1332        distance(int, int, int, int) [107]
+-----------------------------------------------
+                0.00    0.01 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::~_Bvector_base() [41]
+[111]    0.0    0.00    0.01 1875000         std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::~_Bvector_impl() [111]
+                0.00    0.01 1875000/3750000     std::allocator<unsigned long>::~allocator() [93]
+-----------------------------------------------
+                0.00    0.00    1255/3737        void std::__make_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [128]
+                0.00    0.00    2482/3737        void std::__pop_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [126]
+[112]    0.0    0.01    0.00    3737         void std::__adjust_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [112]
+                0.00    0.00   12436/108425268     bool __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip*, Trip*>(Trip*, Trip*) [26]
+                0.00    0.00   16436/113436750     std::remove_reference<Trip&>::type&& std::move<Trip&>(Trip&) [50]
+                0.00    0.00    3737/3737        void std::__push_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [131]
+                0.00    0.00    3737/7503405     std::remove_reference<__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&>::type&& std::move<__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&>(std::remove_reference&&) [140]
+                0.00    0.00    3737/3737        __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Iter_comp_val(__gnu_cxx::__ops::_Iter_comp_iter<{lambda(Trip const&, Trip const&)#1}>&&) [155]
+-----------------------------------------------
+                0.00    0.00 6425549/19276647     __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [82]
+                0.00    0.00 12851098/19276647     __gnu_cxx::new_allocator<int>::max_size() const [67]
+[113]    0.0    0.01    0.00 19276647         __gnu_cxx::new_allocator<int>::_M_max_size() const [113]
+-----------------------------------------------
+                0.01    0.00 12851098/12851098     std::vector<int, std::allocator<int> >::max_size() const [34]
+[114]    0.0    0.01    0.00 12851098         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const [114]
+-----------------------------------------------
+                0.01    0.00 9414606/9414606     int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, std::uniform_int_distribution<int>::param_type const&) [33]
+[115]    0.0    0.01    0.00 9414606         std::uniform_int_distribution<int>::param_type::b() const [115]
+-----------------------------------------------
+                0.00    0.01 5625000/5625000     _GLOBAL__sub_I_distanceMatrix [1]
+[116]    0.0    0.00    0.01 5625000         crossoverRng() [116]
+                0.00    0.01       1/1           std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::mersenne_twister_engine(unsigned long) [125]
+-----------------------------------------------
+                0.00    0.00 1875000/3750000     std::vector<bool, std::allocator<bool> >::_M_initialize_value(bool) [127]
+                0.00    0.00 1875000/3750000     std::_Bvector_base<std::allocator<bool> >::_M_deallocate() [45]
+[117]    0.0    0.01    0.00 3750000         std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::_M_end_addr() const [117]
+                0.00    0.00 3750000/5625000     unsigned long* std::__addressof<unsigned long>(unsigned long&) [144]
+-----------------------------------------------
+                0.01    0.00 1875000/1875000     std::allocator<unsigned long>::allocator<bool>(std::allocator<bool> const&) [119]
+[118]    0.0    0.01    0.00 1875000         __gnu_cxx::new_allocator<unsigned long>::new_allocator() [118]
+-----------------------------------------------
+                0.00    0.01 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::_Bvector_base(std::allocator<bool> const&) [49]
+[119]    0.0    0.00    0.01 1875000         std::allocator<unsigned long>::allocator<bool>(std::allocator<bool> const&) [119]
+                0.01    0.00 1875000/1875000     __gnu_cxx::new_allocator<unsigned long>::new_allocator() [118]
+-----------------------------------------------
+                0.01    0.00 1875000/1875000     std::_Bvector_base<std::allocator<bool> >::_M_deallocate() [45]
+[120]    0.0    0.01    0.00 1875000         std::allocator_traits<std::allocator<unsigned long> >::deallocate(std::allocator<unsigned long>&, unsigned long*, unsigned long) [120]
+                0.00    0.00 1875000/1875000     __gnu_cxx::new_allocator<unsigned long>::deallocate(unsigned long*, unsigned long) [146]
+-----------------------------------------------
+                0.01    0.00 1862630/1862630     std::allocator<int>::allocator() [55]
+[121]    0.0    0.01    0.00 1862630         __gnu_cxx::new_allocator<int>::new_allocator() [121]
+-----------------------------------------------
+                0.01    0.00     623/623         unsigned long std::__detail::__mod<unsigned long, 624ul, 1ul, 0ul>(unsigned long) [123]
+[122]    0.0    0.01    0.00     623         std::__detail::_Mod<unsigned long, 624ul, 1ul, 0ul, true, true>::__calc(unsigned long) [122]
+-----------------------------------------------
+                0.00    0.01     623/623         std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed(unsigned long) [124]
+[123]    0.0    0.00    0.01     623         unsigned long std::__detail::__mod<unsigned long, 624ul, 1ul, 0ul>(unsigned long) [123]
+                0.01    0.00     623/623         std::__detail::_Mod<unsigned long, 624ul, 1ul, 0ul, true, true>::__calc(unsigned long) [122]
+-----------------------------------------------
+                0.00    0.01       1/1           std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::mersenne_twister_engine(unsigned long) [125]
+[124]    0.0    0.00    0.01       1         std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed(unsigned long) [124]
+                0.00    0.01     623/623         unsigned long std::__detail::__mod<unsigned long, 624ul, 1ul, 0ul>(unsigned long) [123]
+                0.00    0.00     624/624         unsigned long std::__detail::__mod<unsigned long, 4294967296ul, 1ul, 0ul>(unsigned long) [157]
+-----------------------------------------------
+                0.00    0.01       1/1           crossoverRng() [116]
+[125]    0.0    0.00    0.01       1         std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::mersenne_twister_engine(unsigned long) [125]
+                0.00    0.01       1/1           std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed(unsigned long) [124]
+-----------------------------------------------
+                0.00    0.00    2482/2482        void std::__sort_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [95]
+[126]    0.0    0.00    0.00    2482         void std::__pop_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [126]
+                0.00    0.00    2482/3737        void std::__adjust_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [112]
+                0.00    0.00    7446/113436750     std::remove_reference<Trip&>::type&& std::move<Trip&>(Trip&) [50]
+-----------------------------------------------
+                0.00    0.00 1875000/1875000     std::vector<bool, std::allocator<bool> >::vector(unsigned long, bool const&, std::allocator<bool> const&) [29]
+[127]    0.0    0.00    0.00 1875000         std::vector<bool, std::allocator<bool> >::_M_initialize_value(bool) [127]
+                0.00    0.00 1875000/3750000     std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::_M_end_addr() const [117]
+-----------------------------------------------
+                0.00    0.00      51/51          void std::__heap_select<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [129]
+[128]    0.0    0.00    0.00      51         void std::__make_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [128]
+                0.00    0.00    1255/3737        void std::__adjust_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [112]
+                0.00    0.00    2510/113436750     std::remove_reference<Trip&>::type&& std::move<Trip&>(Trip&) [50]
+-----------------------------------------------
+                0.00    0.00      51/51          void std::__partial_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [91]
+[129]    0.0    0.00    0.00      51         void std::__heap_select<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [129]
+                0.00    0.00      51/51          void std::__make_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [128]
+-----------------------------------------------
+                0.00    0.00     150/150         void std::__final_insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [47]
+[130]    0.0    0.00    0.00     150         void std::__insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [130]
+                0.00    0.00    2068/7499668     void std::__unguarded_linear_insert<Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [51]
+                0.00    0.00    2250/108425268     bool __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip*, Trip*>(Trip*, Trip*) [26]
+                0.00    0.00    2068/7499668     __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> __gnu_cxx::__ops::__val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(__gnu_cxx::__ops::_Iter_comp_iter<__gnu_cxx::__ops::_Val_comp_iter>) [98]
+                0.00    0.00     364/113436750     std::remove_reference<Trip&>::type&& std::move<Trip&>(Trip&) [50]
+                0.00    0.00     182/182         Trip* std::move_backward<Trip*, Trip*>(Trip*, Trip*, Trip*) [162]
+-----------------------------------------------
+                0.00    0.00    3737/3737        void std::__adjust_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [112]
+[131]    0.0    0.00    0.00    3737         void std::__push_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [131]
+                0.00    0.00    4993/113436750     std::remove_reference<Trip&>::type&& std::move<Trip&>(Trip&) [50]
+                0.00    0.00    4598/4598        bool __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip*, Trip>(Trip*, Trip&) [132]
+-----------------------------------------------
+                0.00    0.00    4598/4598        void std::__push_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&) [131]
+[132]    0.0    0.00    0.00    4598         bool __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip*, Trip>(Trip*, Trip&) [132]
+                0.00    0.00    4598/123408082     evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}::operator()(Trip const&, Trip const&) const [46]
+-----------------------------------------------
+                0.00    0.00     150/7503705     __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> __gnu_cxx::__ops::__iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(__gnu_cxx::__ops::_Iter_comp_iter) [169]
+                0.00    0.00     150/7503705     __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Iter_comp_iter({lambda(Trip const&, Trip const&)#1}) [168]
+                0.00    0.00    3737/7503705     __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Iter_comp_val(__gnu_cxx::__ops::_Iter_comp_iter<{lambda(Trip const&, Trip const&)#1}>&&) [155]
+                0.00    0.00 7499668/7503705     __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Val_comp_iter(__gnu_cxx::__ops::_Iter_comp_iter<{lambda(Trip const&, Trip const&)#1}>&&) [141]
+[139]    0.0    0.00    0.00 7503705         std::remove_reference<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>::type&& std::move<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>(std::remove_reference&&) [139]
+-----------------------------------------------
+                0.00    0.00    3737/7503405     void std::__adjust_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [112]
+                0.00    0.00 7499668/7503405     __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> __gnu_cxx::__ops::__val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(__gnu_cxx::__ops::_Iter_comp_iter<__gnu_cxx::__ops::_Val_comp_iter>) [98]
+[140]    0.0    0.00    0.00 7503405         std::remove_reference<__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&>::type&& std::move<__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&>(std::remove_reference&&) [140]
+-----------------------------------------------
+                0.00    0.00 7499668/7499668     __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> __gnu_cxx::__ops::__val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(__gnu_cxx::__ops::_Iter_comp_iter<__gnu_cxx::__ops::_Val_comp_iter>) [98]
+[141]    0.0    0.00    0.00 7499668         __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Val_comp_iter(__gnu_cxx::__ops::_Iter_comp_iter<{lambda(Trip const&, Trip const&)#1}>&&) [141]
+                0.00    0.00 7499668/7503705     std::remove_reference<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>::type&& std::move<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>(std::remove_reference&&) [139]
+-----------------------------------------------
+                0.00    0.00 6425549/6425549     std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [143]
+[142]    0.0    0.00    0.00 6425549         __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [142]
+-----------------------------------------------
+                0.00    0.00 6425549/6425549     std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [75]
+[143]    0.0    0.00    0.00 6425549         std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [143]
+                0.00    0.00 6425549/6425549     __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [142]
+-----------------------------------------------
+                0.00    0.00 1875000/5625000     std::vector<bool, std::allocator<bool> >::_M_initialize(unsigned long) [60]
+                0.00    0.00 3750000/5625000     std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::_M_end_addr() const [117]
+[144]    0.0    0.00    0.00 5625000         unsigned long* std::__addressof<unsigned long>(unsigned long&) [144]
+-----------------------------------------------
+                0.00    0.00 1875000/1875000     std::allocator<bool>::allocator() [148]
+[145]    0.0    0.00    0.00 1875000         __gnu_cxx::new_allocator<bool>::new_allocator() [145]
+-----------------------------------------------
+                0.00    0.00 1875000/1875000     std::allocator_traits<std::allocator<unsigned long> >::deallocate(std::allocator<unsigned long>&, unsigned long*, unsigned long) [120]
+[146]    0.0    0.00    0.00 1875000         __gnu_cxx::new_allocator<unsigned long>::deallocate(unsigned long*, unsigned long) [146]
+-----------------------------------------------
+                0.00    0.00 1875000/1875000     __gnu_cxx::new_allocator<unsigned long>::allocate(unsigned long, void const*) [103]
+[147]    0.0    0.00    0.00 1875000         __gnu_cxx::new_allocator<unsigned long>::_M_max_size() const [147]
+-----------------------------------------------
+                0.00    0.00 1875000/1875000     _GLOBAL__sub_I_distanceMatrix [1]
+[148]    0.0    0.00    0.00 1875000         std::allocator<bool>::allocator() [148]
+                0.00    0.00 1875000/1875000     __gnu_cxx::new_allocator<bool>::new_allocator() [145]
+-----------------------------------------------
+                0.00    0.00 1862630/1862630     std::allocator<int>::~allocator() [105]
+[149]    0.0    0.00    0.00 1862630         __gnu_cxx::new_allocator<int>::~new_allocator() [149]
+-----------------------------------------------
+                0.00    0.00 1862630/1862630     void std::_Destroy<int*>(int*, int*) [152]
+[150]    0.0    0.00    0.00 1862630         void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [150]
+-----------------------------------------------
+                0.00    0.00 1862630/1862630     std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [56]
+[151]    0.0    0.00    0.00 1862630         std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data() [151]
+-----------------------------------------------
+                0.00    0.00 1862630/1862630     void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [153]
+[152]    0.0    0.00    0.00 1862630         void std::_Destroy<int*>(int*, int*) [152]
+                0.00    0.00 1862630/1862630     void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [150]
+-----------------------------------------------
+                0.00    0.00 1862630/1862630     std::vector<int, std::allocator<int> >::~vector() [72]
+[153]    0.0    0.00    0.00 1862630         void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [153]
+                0.00    0.00 1862630/1862630     void std::_Destroy<int*>(int*, int*) [152]
+-----------------------------------------------
+                0.00    0.00   50000/50000       initialize(Trip*, int (*) [2]) [170]
+[154]    0.0    0.00    0.00   50000         std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&, char*) [154]
+-----------------------------------------------
+                0.00    0.00    3737/3737        void std::__adjust_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [112]
+[155]    0.0    0.00    0.00    3737         __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Iter_comp_val(__gnu_cxx::__ops::_Iter_comp_iter<{lambda(Trip const&, Trip const&)#1}>&&) [155]
+                0.00    0.00    3737/7503705     std::remove_reference<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>::type&& std::move<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>(std::remove_reference&&) [139]
+-----------------------------------------------
+                0.00    0.00     624/624         unsigned long std::__detail::__mod<unsigned long, 4294967296ul, 1ul, 0ul>(unsigned long) [157]
+[156]    0.0    0.00    0.00     624         std::__detail::_Mod<unsigned long, 4294967296ul, 1ul, 0ul, true, true>::__calc(unsigned long) [156]
+-----------------------------------------------
+                0.00    0.00     624/624         std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed(unsigned long) [124]
+[157]    0.0    0.00    0.00     624         unsigned long std::__detail::__mod<unsigned long, 4294967296ul, 1ul, 0ul>(unsigned long) [157]
+                0.00    0.00     624/624         std::__detail::_Mod<unsigned long, 4294967296ul, 1ul, 0ul, true, true>::__calc(unsigned long) [156]
+-----------------------------------------------
+                0.00    0.00     546/546         Trip* std::__copy_move_backward_a<true, Trip*, Trip*>(Trip*, Trip*, Trip*) [163]
+[158]    0.0    0.00    0.00     546         Trip* std::__niter_base<Trip*>(Trip*) [158]
+-----------------------------------------------
+                0.00    0.00     364/364         Trip* std::move_backward<Trip*, Trip*>(Trip*, Trip*, Trip*) [162]
+[159]    0.0    0.00    0.00     364         Trip* std::__miter_base<Trip*>(Trip*) [159]
+-----------------------------------------------
+                0.00    0.00     182/182         Trip* std::__copy_move_backward_a2<true, Trip*, Trip*>(Trip*, Trip*, Trip*) [165]
+[160]    0.0    0.00    0.00     182         Trip* std::__copy_move_backward<true, true, std::random_access_iterator_tag>::__copy_move_b<Trip>(Trip const*, Trip const*, Trip*) [160]
+-----------------------------------------------
+                0.00    0.00     182/182         Trip* std::__copy_move_backward_a<true, Trip*, Trip*>(Trip*, Trip*, Trip*) [163]
+[161]    0.0    0.00    0.00     182         Trip* std::__niter_wrap<Trip*>(Trip* const&, Trip*) [161]
+-----------------------------------------------
+                0.00    0.00     182/182         void std::__insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>) [130]
+[162]    0.0    0.00    0.00     182         Trip* std::move_backward<Trip*, Trip*>(Trip*, Trip*, Trip*) [162]
+                0.00    0.00     364/364         Trip* std::__miter_base<Trip*>(Trip*) [159]
+                0.00    0.00     182/182         Trip* std::__copy_move_backward_a<true, Trip*, Trip*>(Trip*, Trip*, Trip*) [163]
+-----------------------------------------------
+                0.00    0.00     182/182         Trip* std::move_backward<Trip*, Trip*>(Trip*, Trip*, Trip*) [162]
+[163]    0.0    0.00    0.00     182         Trip* std::__copy_move_backward_a<true, Trip*, Trip*>(Trip*, Trip*, Trip*) [163]
+                0.00    0.00     546/546         Trip* std::__niter_base<Trip*>(Trip*) [158]
+                0.00    0.00     182/182         Trip* std::__copy_move_backward_a1<true, Trip*, Trip*>(Trip*, Trip*, Trip*) [164]
+                0.00    0.00     182/182         Trip* std::__niter_wrap<Trip*>(Trip* const&, Trip*) [161]
+-----------------------------------------------
+                0.00    0.00     182/182         Trip* std::__copy_move_backward_a<true, Trip*, Trip*>(Trip*, Trip*, Trip*) [163]
+[164]    0.0    0.00    0.00     182         Trip* std::__copy_move_backward_a1<true, Trip*, Trip*>(Trip*, Trip*, Trip*) [164]
+                0.00    0.00     182/182         Trip* std::__copy_move_backward_a2<true, Trip*, Trip*>(Trip*, Trip*, Trip*) [165]
+-----------------------------------------------
+                0.00    0.00     182/182         Trip* std::__copy_move_backward_a1<true, Trip*, Trip*>(Trip*, Trip*, Trip*) [164]
+[165]    0.0    0.00    0.00     182         Trip* std::__copy_move_backward_a2<true, Trip*, Trip*>(Trip*, Trip*, Trip*) [165]
+                0.00    0.00     182/182         Trip* std::__copy_move_backward<true, true, std::random_access_iterator_tag>::__copy_move_b<Trip>(Trip const*, Trip const*, Trip*) [160]
+-----------------------------------------------
+                0.00    0.00     150/150         main [13]
+[166]    0.0    0.00    0.00     150         mutate(Trip*) [166]
+-----------------------------------------------
+                0.00    0.00     150/150         main [13]
+[167]    0.0    0.00    0.00     150         crossover(Trip*, Trip*, int (*) [2]) [167]
+-----------------------------------------------
+                0.00    0.00     150/150         __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> __gnu_cxx::__ops::__iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(__gnu_cxx::__ops::_Iter_comp_iter) [169]
+[168]    0.0    0.00    0.00     150         __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Iter_comp_iter({lambda(Trip const&, Trip const&)#1}) [168]
+                0.00    0.00     150/7503705     std::remove_reference<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>::type&& std::move<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>(std::remove_reference&&) [139]
+-----------------------------------------------
+                0.00    0.00     150/150         void std::sort<Trip*, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(Trip*, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}) [16]
+[169]    0.0    0.00    0.00     150         __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> __gnu_cxx::__ops::__iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(__gnu_cxx::__ops::_Iter_comp_iter) [169]
+                0.00    0.00     150/150         __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Iter_comp_iter({lambda(Trip const&, Trip const&)#1}) [168]
+                0.00    0.00     150/7503705     std::remove_reference<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>::type&& std::move<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>(std::remove_reference&&) [139]
+-----------------------------------------------
+                0.00    0.00       1/1           main [13]
+[170]    0.0    0.00    0.00       1         initialize(Trip*, int (*) [2]) [170]
+                0.00    0.00   50000/50000       std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&, char*) [154]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [177]
+[171]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [171]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN5TimerC2Ev [77]
+[172]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [172]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_distanceMatrix [1]
+[173]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [173]
+-----------------------------------------------
+                0.00    0.00       1/1           main [13]
+[174]    0.0    0.00    0.00       1         Timer::lap() [174]
+-----------------------------------------------
+                0.00    0.00       1/1           main [13]
+[175]    0.0    0.00    0.00       1         Timer::start() [175]
+-----------------------------------------------
+                0.00    0.00       1/1           main [13]
+[176]    0.0    0.00    0.00       1         Timer::Timer() [176]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [77] _GLOBAL__sub_I__ZN5TimerC2Ev [148] std::allocator<bool>::allocator() [19] void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+   [1] _GLOBAL__sub_I_distanceMatrix [88] std::allocator<bool>::~allocator() [85] std::vector<int, std::allocator<int> >::end()
+ [170] initialize(Trip*, int (*) [2]) [55] std::allocator<int>::allocator() [79] std::vector<int, std::allocator<int> >::begin()
+  [62] indexToCity(int)      [105] std::allocator<int>::~allocator() [14] std::vector<int, std::allocator<int> >::push_back(int const&)
+ [116] crossoverRng()        [119] std::allocator<unsigned long>::allocator<bool>(std::allocator<bool> const&) [58] std::vector<int, std::allocator<int> >::vector()
+   [5] findCityIndex(Trip const&, char) [76] std::allocator<unsigned long>::allocator(std::allocator<unsigned long> const&) [72] std::vector<int, std::allocator<int> >::~vector()
+   [3] followingCity(Trip const&, char) [93] std::allocator<unsigned long>::~allocator() [89] std::vector<int, std::allocator<int> >::operator[](unsigned long)
+ [110] calculateDistanceMatrix(int (*) [2]) [150] void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [156] std::__detail::_Mod<unsigned long, 4294967296ul, 1ul, 0ul, true, true>::__calc(unsigned long)
+ [171] __static_initialization_and_destruction_0(int, int) [71] std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [122] std::__detail::_Mod<unsigned long, 624ul, 1ul, 0ul, true, true>::__calc(unsigned long)
+ [172] __static_initialization_and_destruction_0(int, int) [56] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [157] unsigned long std::__detail::__mod<unsigned long, 4294967296ul, 1ul, 0ul>(unsigned long)
+ [173] __static_initialization_and_destruction_0(int, int) [106] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [123] unsigned long std::__detail::__mod<unsigned long, 624ul, 1ul, 0ul>(unsigned long)
+ [166] mutate(Trip*)          [75] std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [126] void std::__pop_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&)
+  [90] select(Trip*, Trip*)  [151] std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data() [144] unsigned long* std::__addressof<unsigned long>(unsigned long&)
+ [107] distance(int, int, int, int) [97] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [128] void std::__make_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&)
+  [15] evaluate(Trip*, int (*) [2]) [57] std::_Vector_base<int, std::allocator<int> >::_Vector_base() [131] void std::__push_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&)
+ [108] populate(Trip*, Trip*) [81] std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [95] void std::__sort_heap<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&)
+  [11] cityIndex(char)        [12] std::_Bit_iterator::_Bit_iterator(unsigned long*, unsigned int) [159] Trip* std::__miter_base<Trip*>(Trip*)
+ [167] crossover(Trip*, Trip*, int (*) [2]) [44] std::_Bit_iterator::_Bit_iterator() [158] Trip* std::__niter_base<Trip*>(Trip*)
+ [174] Timer::lap()            [9] std::_Bit_iterator::operator+=(long) [61] int* std::__niter_base<int*>(int*)
+ [175] Timer::start()         [70] std::_Bvector_base<std::allocator<bool> >::_M_allocate(unsigned long) [161] Trip* std::__niter_wrap<Trip*>(Trip* const&, Trip*)
+ [176] Timer::Timer()         [53] std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::_Bvector_impl(std::allocator<unsigned long> const&) [43] int* std::__relocate_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&)
+ [145] __gnu_cxx::new_allocator<bool>::new_allocator() [111] std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::~_Bvector_impl() [112] void std::__adjust_heap<Trip*, long, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, long, Trip*, Trip, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+ [102] __gnu_cxx::new_allocator<bool>::~new_allocator() [45] std::_Bvector_base<std::allocator<bool> >::_M_deallocate() [129] void std::__heap_select<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+ [142] __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [54] std::_Bvector_base<std::allocator<bool> >::_Bvector_impl_data::_M_reset() [162] Trip* std::move_backward<Trip*, Trip*>(Trip*, Trip*, Trip*)
+  [82] __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [39] std::_Bvector_base<std::allocator<bool> >::_Bvector_impl_data::_Bvector_impl_data() [91] void std::__partial_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  [65] void __gnu_cxx::new_allocator<int>::construct<int, int const&>(int*, int const&) [86] std::_Bvector_base<std::allocator<bool> >::_S_nword(unsigned long) [73] std::enable_if<std::__is_bitwise_relocatable<int, void>::value, int*>::type std::__relocate_a_1<int, int>(int*, int*, int*, std::allocator<int>&)
+ [121] __gnu_cxx::new_allocator<int>::new_allocator() [49] std::_Bvector_base<std::allocator<bool> >::_Bvector_base(std::allocator<bool> const&) [130] void std::__insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+ [149] __gnu_cxx::new_allocator<int>::~new_allocator() [41] std::_Bvector_base<std::allocator<bool> >::~_Bvector_base() [20] void std::__introsort_loop<Trip*, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, long, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+ [146] __gnu_cxx::new_allocator<unsigned long>::deallocate(unsigned long*, unsigned long) [23] std::_Bit_reference::_Bit_reference(unsigned long*, unsigned long) [22] Trip* std::__unguarded_partition<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+ [103] __gnu_cxx::new_allocator<unsigned long>::allocate(unsigned long, void const*) [30] std::_Bit_reference::operator=(bool) [163] Trip* std::__copy_move_backward_a<true, Trip*, Trip*>(Trip*, Trip*, Trip*)
+  [87] __gnu_cxx::new_allocator<unsigned long>::new_allocator(__gnu_cxx::new_allocator<unsigned long> const&) [143] std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [47] void std::__final_insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+ [118] __gnu_cxx::new_allocator<unsigned long>::new_allocator() [78] std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [94] void std::__move_median_to_first<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  [92] __gnu_cxx::new_allocator<unsigned long>::~new_allocator() [64] std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&) [164] Trip* std::__copy_move_backward_a1<true, Trip*, Trip*>(Trip*, Trip*, Trip*)
+  [84] __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&) [59] void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std::allocator<int>&, int*, int const&) [165] Trip* std::__copy_move_backward_a2<true, Trip*, Trip*>(Trip*, Trip*, Trip*)
+ [155] __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Iter_comp_val(__gnu_cxx::__ops::_Iter_comp_iter<{lambda(Trip const&, Trip const&)#1}>&&) [120] std::allocator_traits<std::allocator<unsigned long> >::deallocate(std::allocator<unsigned long>&, unsigned long*, unsigned long) [51] void std::__unguarded_linear_insert<Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+ [132] bool __gnu_cxx::__ops::_Iter_comp_val<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip*, Trip>(Trip*, Trip&) [104] std::allocator_traits<std::allocator<unsigned long> >::allocate(std::allocator<unsigned long>&, unsigned long) [48] void std::__unguarded_insertion_sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+ [141] __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Val_comp_iter(__gnu_cxx::__ops::_Iter_comp_iter<{lambda(Trip const&, Trip const&)#1}>&&) [18] std::_Bit_iterator_base::_M_incr(long) [21] Trip* std::__unguarded_partition_pivot<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  [68] bool __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip, Trip*>(Trip&, Trip*) [25] std::_Bit_iterator_base::_Bit_iterator_base(unsigned long*, unsigned int) [101] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+ [168] __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::_Iter_comp_iter({lambda(Trip const&, Trip const&)#1}) [160] Trip* std::__copy_move_backward<true, true, std::random_access_iterator_tag>::__copy_move_b<Trip>(Trip const*, Trip const*, Trip*) [63] unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  [26] bool __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>::operator()<Trip*, Trip*>(Trip*, Trip*) [52] std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand() [109] std::__lg(long)
+  [98] __gnu_cxx::__ops::_Val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> __gnu_cxx::__ops::__val_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(__gnu_cxx::__ops::_Iter_comp_iter<__gnu_cxx::__ops::_Val_comp_iter>) [124] std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed(unsigned long) [50] std::remove_reference<Trip&>::type&& std::move<Trip&>(Trip&)
+ [169] __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> __gnu_cxx::__ops::__iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(__gnu_cxx::__ops::_Iter_comp_iter) [125] std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::mersenne_twister_engine(unsigned long) [140] std::remove_reference<__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&>::type&& std::move<__gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>&>(std::remove_reference&&)
+ [100] __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::difference_type __gnu_cxx::operator-<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&) [40] std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator()() [139] std::remove_reference<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>::type&& std::move<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}&>(std::remove_reference&&)
+ [113] __gnu_cxx::new_allocator<int>::_M_max_size() const [99] std::uniform_int_distribution<int>::param_type::param_type(int, int) [16] void std::sort<Trip*, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>(Trip*, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}, evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1})
+  [67] __gnu_cxx::new_allocator<int>::max_size() const [38] unsigned int std::uniform_int_distribution<int>::_S_nd<unsigned long, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>, unsigned int>(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, unsigned int) [31] std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Trip> >, std::is_move_constructible<Trip>, std::is_move_assignable<Trip> >::value, void>::type std::swap<Trip>(Trip&, Trip&)
+ [147] __gnu_cxx::new_allocator<unsigned long>::_M_max_size() const [80] std::uniform_int_distribution<int>::uniform_int_distribution(int, int) [17] void std::__sort<Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}> >(Trip*, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>, __gnu_cxx::__ops::_Iter_comp_iter<evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}>)
+  [83] __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const [28] int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&) [96] int const& std::forward<int const&>(std::remove_reference<int const&>::type&)
+ [114] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const [33] int std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >(std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, std::uniform_int_distribution<int>::param_type const&) [152] void std::_Destroy<int*>(int*, int*)
+  [10] std::_Bit_iterator::operator*() const [60] std::vector<bool, std::allocator<bool> >::_M_initialize(unsigned long) [153] void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+   [4] std::_Bit_iterator::operator[](long) const [127] std::vector<bool, std::allocator<bool> >::_M_initialize_value(bool) [32] void std::iter_swap<Trip*, Trip*>(Trip*, Trip*)
+ [117] std::_Bvector_base<std::allocator<bool> >::_Bvector_impl::_M_end_addr() const [7] std::vector<bool, std::allocator<bool> >::begin() [6] std::operator+(std::_Bit_iterator const&, long)
+  [24] std::_Bit_reference::operator bool() const [29] std::vector<bool, std::allocator<bool> >::vector(unsigned long, bool const&, std::allocator<bool> const&) [154] std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char> >(std::basic_istream<char, std::char_traits<char> >&, char*)
+  [69] std::uniform_int_distribution<int>::param_type::a() const [35] std::vector<bool, std::allocator<bool> >::~vector() [46] evaluate(Trip*, int (*) [2])::{lambda(Trip const&, Trip const&)#1}::operator()(Trip const&, Trip const&) const
+ [115] std::uniform_int_distribution<int>::param_type::b() const [2] std::vector<bool, std::allocator<bool> >::operator[](unsigned long) [74] operator new(unsigned long, void*)
+  [27] std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [36] std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [8] _init
+  [66] std::vector<int, std::allocator<int> >::size() const [37] std::vector<int, std::allocator<int> >::_S_relocate(int*, int*, int*, std::allocator<int>&)
+  [34] std::vector<int, std::allocator<int> >::max_size() const [42] std::vector<int, std::allocator<int> >::_S_do_relocate(int*, int*, int*, std::allocator<int>&, std::integral_constant<bool, true>)

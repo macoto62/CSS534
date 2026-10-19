@@ -70,8 +70,7 @@ void calculateDistanceMatrix(int coordinates[CITIES][2]) {
 }
 
 mt19937& crossoverRng() {
-    // 每個執行緒獨立擁有 rng，並用「固定基底 + 執行緒編號」當作種子
-    thread_local std::mt19937 rng(12345678u + omp_get_thread_num());
+    thread_local std::mt19937 rng(11111111u + omp_get_thread_num());
     return rng;
 }
 
@@ -93,6 +92,7 @@ void evaluate(Trip trip[CHROMOSOMES], int coordinates[CITIES][2]) {
 
         trip[i].fitness = totalDistance;
     }
+
     //May be optimized
     sort(trip, trip + CHROMOSOMES,
          [](const Trip& a, const Trip& b) {
