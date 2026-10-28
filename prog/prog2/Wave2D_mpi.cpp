@@ -2,6 +2,7 @@
 #include "Timer.h"
 #include <stdlib.h>   
 #include "mpi.h"
+#include <omp.h>
 
 /* 1. Initialization 
       - include mpi.h
@@ -76,9 +77,9 @@ void synchronize(double* grid, int stripe_size,
   }
 }
 
-void gatherAndPrint(const double* grid, int stripe_size, int size,
+void gatherAndPrint(double* grid, int stripe_size, int size,
                     int my_rank, int simulation_time, double* output,
-                    const int* recv_counts, const int* displacements) {
+                    int* recv_counts, int* displacements) {
   MPI_Gatherv(
     grid + size, stripe_size * size, MPI_DOUBLE,
     output, recv_counts, displacements, MPI_DOUBLE,
@@ -105,19 +106,28 @@ int main( int argc, char *argv[] ) {
   MPI_Comm_size( MPI_COMM_WORLD, &mpi_size );
 
   // verify arguments
-  if ( argc != 4 ) {
-    cerr << "usage: Wave2D size max_time interval" << endl;
+  if ( argc != 5 ) {
+    if (my_rank == 0)
+      cerr << "usage: Wave2D_mpi size max_time interval threads" << endl;
+    MPI_Finalize();
     return -1;
   }
   int size = atoi( argv[1] );
   int max_time = atoi( argv[2] );
   int interval  = atoi( argv[3] );
+  int nthreads = atoi( argv[4] );
 
-  if ( size < 100 || max_time < 3 || interval < 0 ) {
-    cerr << "usage: Wave2D size max_time interval" << endl;
-    cerr << "       where size >= 100 && time >= 3 && interval >= 0" << endl;
+  if ( size < 100 || max_time < 3 || interval < 0 || nthreads < 1 || mpi_size > size ) {
+    if (my_rank == 0) {
+      cerr << "usage: Wave2D_mpi size max_time interval threads" << endl;
+      cerr << "       where size >= 100, time >= 3, interval >= 0, "
+              "threads >= 1, and ranks <= size" << endl;
+    }
+    MPI_Finalize();
     return -1;
   }
+
+  omp_set_num_threads(nthreads);
 
   // Initialize
   int num_stripe = size / mpi_size; // the # of rows for each rank
@@ -152,6 +162,7 @@ int main( int argc, char *argv[] ) {
   // time = 0;
   // initialize the simulation space: calculate z[0][][]
   int weight = size / default_size;
+  #pragma omp parallel for schedule(static)
   for (int local_i = 1; local_i <= stripe_size; local_i++) {
     int global_i = stripe_begin + (local_i - 1);
 
@@ -172,6 +183,7 @@ int main( int argc, char *argv[] ) {
   // calculate z[1][][] 
   // cells not on edge
   const double waveFactor = c * c * (dt / dd) * (dt / dd);
+  #pragma omp parallel for schedule(static)
   for (int local_i = 1; local_i <= stripe_size; local_i++) {
     int global_i = stripe_begin + local_i - 1;
 
@@ -199,6 +211,7 @@ int main( int argc, char *argv[] ) {
 
     synchronize(z[previous], stripe_size, size, my_rank, mpi_size);
 
+    #pragma omp parallel for schedule(static)
     for (int local_i = 1; local_i <= stripe_size; local_i++) {
       int global_i = stripe_begin + local_i - 1;
 
@@ -236,6 +249,7 @@ int main( int argc, char *argv[] ) {
   delete[] z_output;
   delete[] recv_counts;
   delete[] displacements;
+  
   MPI_Finalize( ); // shut down MPI
   return 0;
 }
