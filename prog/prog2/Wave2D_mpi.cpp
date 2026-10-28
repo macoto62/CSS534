@@ -124,19 +124,26 @@ int main( int argc, char *argv[] ) {
   int remainder = size % mpi_size; // the number of remaining rows
   int stripe_size = num_stripe + (my_rank < remainder ? 1 : 0); // the number of rows for each rank
   int stripe_begin = my_rank * num_stripe + min(my_rank, remainder); // the starting row for each rank
-  int stripe_end = stripe_begin + stripe_size - 1; // the ending row for each rank
 
-  // create a simulation space
-  vector<double> z_output; // complete matrix on rank 0 for output
-  vector<vector<vector<double>>> z(3, vector<vector<double>>(stripe_size+2, vector<double>(size, 0.0))); // for each rank's local matrix, with extra rows for edge exchange
-  // if(my_rank == 0 ){
-  //   for ( int p = 0; p < 3; p++ ) 
-  //     for ( int i = 0; i < size; i++ )
-  //       for ( int j = 0; j < size; j++ )
-  //         z[p][i][j] = 0.0; // no wave
-  // }
-  if (my_rank == 0)
-    z_output.resize(size * size, 0.0);
+  // Each time plane is one contiguous array, including two ghost rows.
+  double* z[3];
+  for (int p = 0; p < 3; p++)
+    z[p] = new double[(stripe_size + 2) * size]();
+
+  double* z_output = nullptr;
+  int* recv_counts = nullptr;
+  int* displacements = nullptr;
+  if (my_rank == 0 && interval != 0) {
+    z_output = new double[size * size];
+    recv_counts = new int[mpi_size];
+    displacements = new int[mpi_size];
+    for (int rank = 0; rank < mpi_size; rank++) {
+      int rank_rows = num_stripe + (rank < remainder ? 1 : 0);
+      int rank_begin = rank * num_stripe + min(rank, remainder);
+      recv_counts[rank] = rank_rows * size;
+      displacements[rank] = rank_begin * size;
+    }
+  }
 
   // start a timer
   Timer time;
@@ -150,10 +157,10 @@ int main( int argc, char *argv[] ) {
 
     for (int j = 0; j < size; j++) {
       if (global_i > 40 * weight && global_i < 60 * weight && j > 40 * weight && j < 60 * weight) {
-          z[0][local_i][j] = 20.0;
+          z[0][local_i * size + j] = 20.0;
       } 
       else {
-          z[0][local_i][j] = 0.0;
+          z[0][local_i * size + j] = 0.0;
       }
     }
   }
@@ -173,13 +180,14 @@ int main( int argc, char *argv[] ) {
       continue;
 
     for (int j = 1; j < size - 1; j++) {
-      z[1][local_i][j] = z[0][local_i][j] + waveFactor / 2.0 * (z[0][local_i + 1][j] + z[0][local_i - 1][j] + z[0][local_i][j + 1] + z[0][local_i][j - 1] - 4.0 * z[0][local_i][j]);
+      int index = local_i * size + j;
+      z[1][index] = z[0][index] + waveFactor / 2.0 * (z[0][index + size] + z[0][index - size] + z[0][index + 1] + z[0][index - 1] - 4.0 * z[0][index]);
     }
   }
 
   if (interval == 1) {
-    gatherAndPrint(z[1], stripe_size, size, num_stripe, remainder,
-                   my_rank, mpi_size, 1, z_output);
+    gatherAndPrint(z[1], stripe_size, size, my_rank, 1,
+                   z_output, recv_counts, displacements);
   }
 
   // simulate wave diffusion from time = 2
@@ -199,21 +207,22 @@ int main( int argc, char *argv[] ) {
         continue;
 
       for (int j = 1; j < size - 1; j++) {
-        z[current][local_i][j] =
-          2.0 * z[previous][local_i][j] - z[old][local_i][j] +
+        int index = local_i * size + j;
+        z[current][index] =
+          2.0 * z[previous][index] - z[old][index] +
           waveFactor * (
-            z[previous][local_i + 1][j] +
-            z[previous][local_i - 1][j] +
-            z[previous][local_i][j + 1] +
-            z[previous][local_i][j - 1] -
-            4.0 * z[previous][local_i][j]
+            z[previous][index + size] +
+            z[previous][index - size] +
+            z[previous][index + 1] +
+            z[previous][index - 1] -
+            4.0 * z[previous][index]
           );
       }
     }
 
     if ( interval != 0 && ( t % interval == 0 || t == max_time - 1 ) ) {
-      gatherAndPrint(z[current], stripe_size, size, num_stripe, remainder,
-                     my_rank, mpi_size, t, z_output);
+      gatherAndPrint(z[current], stripe_size, size, my_rank, t,
+                     z_output, recv_counts, displacements);
     }
   } // end of simulation
 
@@ -222,6 +231,11 @@ int main( int argc, char *argv[] ) {
   if ( my_rank == 0 ){
     cerr << "Elapsed time = " << time.lap( ) << endl;
   }
+  for (int p = 0; p < 3; p++)
+    delete[] z[p];
+  delete[] z_output;
+  delete[] recv_counts;
+  delete[] displacements;
   MPI_Finalize( ); // shut down MPI
   return 0;
 }
