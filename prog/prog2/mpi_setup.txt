@@ -1,1 +1,1 @@
-../lab2/mpi_setup.txt
+../../lab/lab2/mpi_setup.txt

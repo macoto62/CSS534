@@ -61,7 +61,8 @@ int main( int argc, char *argv[] ) {
     }
   }
 
-  if ( interval > 0 && ( 1 % interval == 0 || 1 == max_time - 1 ) ) {
+  // interval=0: no output
+  if ( interval == 1 ) {
     cout << 1 << "\n";
     for ( int j = 0; j < size; j++ ) {
       for ( int i = 0; i < size; i++ )
@@ -84,7 +85,7 @@ int main( int argc, char *argv[] ) {
       }
     }
 
-    if ( interval > 0 && ( t % interval == 0 || t == max_time - 1 ) ) {
+    if ( interval != 0 && ( t % interval == 0 || t == max_time - 1 ) ) {
       cout << t << "\n";
       for ( int j = 0; j < size; j++ ) {
         for ( int i = 0; i < size; i++ )
