@@ -221,21 +221,12 @@ int main( int argc, char *argv[] ) {
 
       for (int j = 1; j < size - 1; j++) {
         int index = local_i * size + j;
-        z[current][index] =
-          2.0 * z[previous][index] - z[old][index] +
-          waveFactor * (
-            z[previous][index + size] +
-            z[previous][index - size] +
-            z[previous][index + 1] +
-            z[previous][index - 1] -
-            4.0 * z[previous][index]
-          );
+        z[current][index] = 2.0 * z[previous][index] - z[old][index] + waveFactor * ( z[previous][index + size] + z[previous][index - size] + z[previous][index + 1] + z[previous][index - 1] - 4.0 * z[previous][index] );
       }
     }
 
     if ( interval != 0 && ( t % interval == 0 || t == max_time - 1 ) ) {
-      gatherAndPrint(z[current], stripe_size, size, my_rank, t,
-                     z_output, recv_counts, displacements);
+      gatherAndPrint(z[current], stripe_size, size, my_rank, t, z_output, recv_counts, displacements);
     }
   } // end of simulation
 
@@ -244,12 +235,13 @@ int main( int argc, char *argv[] ) {
   if ( my_rank == 0 ){
     cerr << "Elapsed time = " << time.lap( ) << endl;
   }
-  for (int p = 0; p < 3; p++)
+  for (int p = 0; p < 3; p++){
     delete[] z[p];
+  }
   delete[] z_output;
   delete[] recv_counts;
   delete[] displacements;
-  
+
   MPI_Finalize( ); // shut down MPI
   return 0;
 }
