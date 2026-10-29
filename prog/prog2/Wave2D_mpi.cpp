@@ -108,7 +108,7 @@ int main( int argc, char *argv[] ) {
   // verify arguments
   if ( argc != 5 ) {
     if (my_rank == 0)
-      cerr << "usage: Wave2D_mpi size max_time interval threads" << endl;
+      cerr << "usage: Wave2D_mpi size max_time interval threads\n";
     MPI_Finalize();
     return -1;
   }
@@ -119,9 +119,9 @@ int main( int argc, char *argv[] ) {
 
   if ( size < 100 || max_time < 3 || interval < 0 || nthreads < 1 || mpi_size > size ) {
     if (my_rank == 0) {
-      cerr << "usage: Wave2D_mpi size max_time interval threads" << endl;
+      cerr << "usage: Wave2D_mpi size max_time interval threads\n";
       cerr << "       where size >= 100, time >= 3, interval >= 0, "
-              "threads >= 1, and ranks <= size" << endl;
+              "threads >= 1, and ranks <= size\n";
     }
     MPI_Finalize();
     return -1;
@@ -134,6 +134,15 @@ int main( int argc, char *argv[] ) {
   int remainder = size % mpi_size; // the number of remaining rows
   int stripe_size = num_stripe + (my_rank < remainder ? 1 : 0); // the number of rows for each rank
   int stripe_begin = my_rank * num_stripe + min(my_rank, remainder); // the starting row for each rank
+
+  // Report each rank's global i-index range on stderr, leaving wave data on stdout.
+  if (my_rank == 0) {
+    for (int rank = 0; rank < mpi_size; rank++) {
+      int rank_rows = num_stripe + (rank < remainder ? 1 : 0);
+      int rank_begin = rank * num_stripe + min(rank, remainder);
+      cerr << "rank[" << rank << "]'s range = " << rank_begin << " ~ " << rank_begin + rank_rows - 1 << "\n";
+    }
+  }
 
   // Each time plane is one contiguous array, including two ghost rows.
   double* z[3];
