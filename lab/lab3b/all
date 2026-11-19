@@ -1,0 +1,6 @@
+#!/bin/sh
+
+$HADOOP_HOME/rm-hadoop-tmp-files.sh $HADOOP_HOME/etc/hadoop/workers
+$HADOOP_HOME/reformat.sh
+./run.sh
+stop-all.sh

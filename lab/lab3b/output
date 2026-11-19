@@ -1,0 +1,57 @@
+Stopping namenodes on [cssmpi1.uwb.edu]
+Stopping datanodes
+Stopping secondary namenodes [cssmpi1]
+Stopping nodemanagers
+Stopping resourcemanager
+=========== Deleting Hadoop temp files on: cssmpi1.uwb.edu ===========
+user: css534
+removed directory '/tmp/hsperfdata_css534'
+removed '/tmp/hadoop-css534/dfs/data/current/VERSION'
+removed '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511/current/VERSION'
+removed '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511/current/finalized/subdir0/subdir0/blk_1073741825'
+removed '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511/current/finalized/subdir0/subdir0/blk_1073741826'
+removed directory '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511/current/finalized/subdir0/subdir0'
+removed directory '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511/current/finalized/subdir0'
+removed directory '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511/current/finalized'
+removed directory '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511/current/rbw'
+removed '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511/current/dfsUsed'
+removed directory '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511/current'
+removed directory '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511/tmp'
+removed '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511/scanner.cursor'
+removed directory '/tmp/hadoop-css534/dfs/data/current/BP-2018423311-10.158.82.81-1789848893511'
+removed directory '/tmp/hadoop-css534/dfs/data/current'
+removed directory '/tmp/hadoop-css534/dfs/data'
+removed directory '/tmp/hadoop-css534/dfs'
+removed directory '/tmp/hadoop-css534/nm-local-dir/usercache'
+removed directory '/tmp/hadoop-css534/nm-local-dir/filecache'
+removed directory '/tmp/hadoop-css534/nm-local-dir/nmPrivate'
+removed directory '/tmp/hadoop-css534/nm-local-dir'
+removed directory '/tmp/hadoop-css534/css534670128886/.staging'
+removed directory '/tmp/hadoop-css534/css534670128886'
+removed directory '/tmp/hadoop-css534/mapred/local/job_local670128886_0001_0b53bbe1-cf8d-427d-a8e3-bd639f2ec80d'
+removed directory '/tmp/hadoop-css534/mapred/local/job_local670128886_0001_cfe68188-4ba6-4a50-a780-3bf4b98d811a'
+removed directory '/tmp/hadoop-css534/mapred/local/localRunner/css534/job_local670128886_0001'
+removed directory '/tmp/hadoop-css534/mapred/local/localRunner/css534/jobcache/job_local670128886_0001/attempt_local670128886_0001_m_000000_0'
+removed directory '/tmp/hadoop-css534/mapred/local/localRunner/css534/jobcache/job_local670128886_0001/attempt_local670128886_0001_r_000000_0/output'
+removed directory '/tmp/hadoop-css534/mapred/local/localRunner/css534/jobcache/job_local670128886_0001/attempt_local670128886_0001_r_000000_0'
+removed directory '/tmp/hadoop-css534/mapred/local/localRunner/css534/jobcache/job_local670128886_0001'
+removed directory '/tmp/hadoop-css534/mapred/local/localRunner/css534/jobcache'
+removed directory '/tmp/hadoop-css534/mapred/local/localRunner/css534'
+removed directory '/tmp/hadoop-css534/mapred/local/localRunner'
+removed directory '/tmp/hadoop-css534/mapred/local'
+removed directory '/tmp/hadoop-css534/mapred'
+removed directory '/tmp/hadoop-css534'
+Starting namenodes on [cssmpi1.uwb.edu]
+Starting datanodes
+Starting secondary namenodes [cssmpi1]
+Starting resourcemanager
+Starting nodemanagers
+Found 1 items
+drwxr-xr-x   - css534 css534          0 2026-09-19 13:28 /user/css534
+start time =============================
+1789849715.573886769
+packageJobJar: [/tmp/hadoop-unjar10814479153790866659/] [] /tmp/streamjob3396335632408270281.jar tmpDir=null
+end time ===============================
+1789849786.267811296
